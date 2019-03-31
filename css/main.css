@@ -12,7 +12,7 @@ body {
 .jumbotron img {
   position: absolute;
   left: 5%;
-  width: 105px;
+  width: 125px;
   height: auto;
   top: 30px;
 }
@@ -86,7 +86,7 @@ body {
   width: 100%;
   position: absolute;
   margin-left: 20%;
-  margin-top: -20px;
+  margin-top: -10px;
   height: auto;
 }
 
@@ -139,6 +139,11 @@ body {
   }
 }
 
+.row #welcome-message #link:hover {
+  background-color: white;
+  color: #6800fa;
+}
+
 .row #welcome-message #title, .row #welcome-message #subtitle {
   font-family: "Montserrat";
   font-size: 40px;
@@ -152,7 +157,7 @@ body {
   margin: auto;
   margin-top: 260px;
   width: 90%;
-  margin-bottom: 600px;
+  margin-bottom: 500px;
 }
 
 .faq .col-lg-12 {

@@ -19,7 +19,7 @@ body {
     img {
       position: absolute;
       left: 5%;
-      width: 105px;
+      width: 125px;
       height: auto;
       top: 30px;
       @media screen and (max-width: 1300px) {
@@ -73,7 +73,7 @@ body {
         width: 100%;
         position: absolute;
         margin-left: 20%;
-        margin-top: -20px;
+        margin-top: -10px;
         height: auto;
         @media screen and (max-width: 1300px) {
             height: 0;
@@ -114,6 +114,10 @@ body {
             margin-top: 25px;
         }
         }
+        #link:hover {
+            background-color: white;
+            color: $purple;
+        }
         #title, #subtitle {
             font-family: $mfont;
             font-size: 40px;
@@ -127,7 +131,7 @@ body {
     margin: auto;
     margin-top: 260px;
     width: 90%;
-    margin-bottom: 600px;
+    margin-bottom: 500px;
     .col-lg-12 {
         padding-top: 30px;
         padding-bottom: 30px;
