@@ -1,1 +1,208 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");body{background-color:#fff4e4}.jumbotron{background-color:white;margin-left:-20px;margin-right:-15px}@media screen and (max-width: 1300px){.jumbotron{height:80px}}.jumbotron img{position:absolute;left:5%;width:125px;height:auto;top:30px}@media screen and (max-width: 1300px){.jumbotron img{left:5%;width:20%}}.jumbotron ul{position:absolute;width:100%;height:100%;z-index:1;overflow:hidden;font-weight:bold;background-color:none;font-family:"Montserrat";top:25px;right:4%}@media screen and (max-width: 1300px){.jumbotron ul{right:1.5%;top:17px}}.jumbotron ul li{float:right;list-style-type:none}.jumbotron ul li a{color:#aaadb3;text-transform:capitalize;text-decoration:none;padding:15px 20px;display:block;font-size:17px}@media screen and (max-width: 1300px){.jumbotron ul li a{padding:1em;font-size:1em}}.jumbotron ul li a:hover{color:#6800fa}.jumbotron ul .current{color:#6800fa}.row{width:100%;margin:0 !important;padding-top:30px}@media screen and (max-width: 1300px){.row{padding-top:-5px}}.row #photo{height:330px}@media screen and (max-width: 1300px){.row #photo{overflow:hidden}}.row #photo img{width:100%;position:absolute;margin-left:20%;margin-top:-10px;height:auto}@media screen and (max-width: 1300px){.row #photo img{z-index:-1;height:115%;width:auto;margin-top:10px;margin-left:27%;overflow-x:hidden}}.row #welcome-message{width:40%;display:table;margin:0 auto;margin-top:70px;margin-left:3.7%}@media screen and (max-width: 1300px){.row #welcome-message{width:95%;margin-top:15px;margin-left:-0.7%}}.row #welcome-message #link{background-color:#6800fa;border:none;color:white;padding:1.23em 2.3em;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;cursor:pointer;font-family:"Montserrat";font-weight:medium;margin-top:10px;position:absolute;z-index:400}@media screen and (max-width: 1300px){.row #welcome-message #link{font-size:1.30em;padding:1.0em 2.0em;display:table;margin:0 auto;margin-top:25px}}.row #welcome-message #link:hover{background-color:white;color:#6800fa}.row #welcome-message #title,.row #welcome-message #subtitle{font-family:"Montserrat";font-size:40px}.row #welcome-message #subtitle{font-size:16px}.faq{margin:auto;margin-top:260px;width:90%;margin-bottom:500px}@media screen and (max-width: 1300px){.faq{margin-top:-10px;margin-bottom:50px}}.faq .col-lg-12{padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;background-color:white}@media screen and (max-width: 1300px){.faq .col-lg-12{margin-bottom:30px}}.faq h4,.faq p,.faq h3{font-family:"Montserrat";font-size:20px}.faq h3{text-align:center;font-size:30px;margin-bottom:50px}.faq p{font-size:13px}footer{background-color:white;font-family:"Montserrat";text-align:center;padding-top:20px;padding-bottom:20px}footer svg{width:30px;margin-top:0px}footer p{margin-top:0px;font-size:12px}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  background-color: #fff4e4;
+}
+.jumbotron {
+  background-color: white;
+  margin-left: -20px;
+  margin-right: -15px;
+}
+@media screen and (max-width: 1300px) {
+  .jumbotron {
+    height: 80px;
+  }
+}
+.jumbotron img {
+  position: absolute;
+  left: 5%;
+  width: 125px;
+  height: auto;
+  top: 30px;
+}
+@media screen and (max-width: 1300px) {
+  .jumbotron img {
+    left: 5%;
+    width: 20%;
+  }
+}
+.jumbotron ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: none;
+  font-family: 'Montserrat';
+  top: 25px;
+  right: 4%;
+}
+@media screen and (max-width: 1300px) {
+  .jumbotron ul {
+    right: 1.5%;
+    top: 17px;
+  }
+}
+.jumbotron ul li {
+  float: right;
+  list-style-type: none;
+}
+.jumbotron ul li a {
+  color: #aaadb3;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-size: 17px;
+}
+@media screen and (max-width: 1300px) {
+  .jumbotron ul li a {
+    padding: 1em;
+    font-size: 1em;
+  }
+}
+.jumbotron ul li a:hover {
+  color: #6800fa;
+}
+.jumbotron ul .current {
+  color: #6800fa;
+}
+.row {
+  width: 100%;
+  margin: 0 !important;
+  padding-top: 30px;
+}
+@media screen and (max-width: 1300px) {
+  .row {
+    padding-top: -5px;
+  }
+}
+.row #photo {
+  height: 330px;
+}
+@media screen and (max-width: 1300px) {
+  .row #photo {
+    overflow: hidden;
+  }
+}
+.row #photo img {
+  width: 100%;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: -10px;
+  height: auto;
+}
+@media screen and (max-width: 1300px) {
+  .row #photo img {
+    z-index: -1;
+    height: 115%;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 27%;
+    overflow-x: hidden;
+  }
+}
+.row #welcome-message {
+  width: 40%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-left: 3.7%;
+}
+@media screen and (max-width: 1300px) {
+  .row #welcome-message {
+    width: 95%;
+    margin-top: 15px;
+    margin-left: -0.7%;
+  }
+}
+.row #welcome-message #link {
+  background-color: #6800fa;
+  border: none;
+  color: white;
+  padding: 1.23em 2.3em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: medium;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 400;
+}
+@media screen and (max-width: 1300px) {
+  .row #welcome-message #link {
+    font-size: 1.3em;
+    padding: 1em 2em;
+    display: table;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}
+.row #welcome-message #link:hover {
+  background-color: white;
+  color: #6800fa;
+}
+.row #welcome-message #title,
+.row #welcome-message #subtitle {
+  font-family: 'Montserrat';
+  font-size: 40px;
+}
+.row #welcome-message #subtitle {
+  font-size: 16px;
+}
+.faq {
+  margin: auto;
+  margin-top: 260px;
+  width: 90%;
+  margin-bottom: 500px;
+}
+@media screen and (max-width: 1300px) {
+  .faq {
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+}
+.faq .col-lg-12 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+@media screen and (max-width: 1300px) {
+  .faq .col-lg-12 {
+    margin-bottom: 30px;
+  }
+}
+.faq h4,
+.faq p,
+.faq h3 {
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+.faq h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.faq p {
+  font-size: 13px;
+}
+footer {
+  background-color: white;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer svg {
+  width: 30px;
+  margin-top: 0px;
+}
+footer p {
+  margin-top: 0px;
+  font-size: 12px;
+}
