@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <link href="/assets/css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/haxlogo5.png" type="image/x-icon">    
@@ -30,61 +28,73 @@
 </head>
 <body>
     <div class="main">
-    <div class="nav" id="header-strip">
-        <a href="index.html"><img src="assets/images/haxlogo1.png"></a>
-        <ul id="menu" class="animated fadeInDown">
-            <li><a href="mailto:team@haxorg.io">Contact</a></li>
-            <li><a href="https://bit.ly/HAXapply">Join</a></li>
-            <li><a href="index.html" class="current">Home</a></li>
-        </ul> 
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+              <img src="/assets/images/haxlogo1.png" height="50px" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://bit.ly/HAXapply">Join</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:team@haxorg.io">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
 
-    <section id="hero">
-        <div class="container">
-            <div class="row">
-                <img id="hero-image" class="col-md-6 order-md-2" src="assets/images/lady.png">
-                <div class="col-md-6 order-md-1" id="welcome-message">
-                    <h1 id="title" class="animated fadeInUp delay-1s">This is HAX.</h1>
-                    <p id="subtitle" class="animated fadeInUp delay-1s">A global nonprofit dedicated to making computer science education accessible, one hackathon at a time. We're proud to be #BUILTBYGIRLS. Ad astra!</p>
-                    <a href="https://forms.gle/6ABDkpuKn86wmbLM6">
-                        <button id="hero-btn" type="button" class="btn btn-primary animated fadeInUp delay-1s">Get hacking.</button>
-                    </a>            
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq">
-        <div class="container-fluid">
-            <div class="faq">
-                <h3>FAQs</h3>
+        <section id="hero">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="faq-block">
-                            <h4 class="faq-title">What is HAX?</h4>
-                            <p class="faq-text">HAX is an up and coming organization dedicated to helping people organize and hold hackathons, with a specific focus on women and disadvantaged minorities. We aim to provide all women and minorities a chance to receive and hands-on experience with programming and computer science, through bringing hackathons to high schools and overlooked areas all over the world!</p>
-                        </div>
+                    <img id="hero-image" class="col-md-6 order-md-2" src="assets/images/lady.png">
+                    <div class="col-md-6 order-md-1" id="welcome-message">
+                        <h1 id="title" class="animated fadeInUp delay-1s">This is HAX.</h1>
+                        <p id="subtitle" class="animated fadeInUp delay-1s">A global nonprofit dedicated to making computer science education accessible, one hackathon at a time. We're proud to be #BUILTBYGIRLS. Ad astra!</p>
+                        <a href="https://forms.gle/6ABDkpuKn86wmbLM6">
+                            <button id="hero-btn" type="button" class="btn btn-primary animated fadeInUp delay-1s">Get hacking.</button>
+                        </a>            
                     </div>
-                    <div class="col-lg-4">
-                        <div class="faq-block">
-                            <h4 class="faq-title">How can I join?</h4>
-                            <p class="faq-text">We have 7 separate teams: Leadership, Content Creation, Outreach, Social Media, Management, Design, and Global Teams. You can apply to join multiple teams. Many potential team members expressed interest in getting involved in more than one team, so if you are not a member of the Core or Ambassador Team, you can be involved in a maximum of 3 teams. Make sure not to overexert yourself; while we are as passionate about this as you are, we do not expect this to take priority over school work! To apply, follow <a href="https://bit.ly/HAXapply" target="_">this link</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <div class="container">
+                <div class="faq">
+                    <h2 class="faq-section-title">FAQs</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="faq-block">
+                                <h4 class="faq-block-title">What is HAX?</h4>
+                                <p class="faq-text">HAX is an up and coming organization dedicated to helping people organize and hold hackathons, with a specific focus on women and disadvantaged minorities. We aim to provide all women and minorities a chance to receive and hands-on experience with programming and computer science, through bringing hackathons to high schools and overlooked areas all over the world!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="faq-block">
-                            <h4 class="faq-title">Who started HAX?</h4>
-                            <p class="faq-text">HAX is the brain-child of Justina Chua and a team of absolutely charming, dilligent high school and college students. Hours have been put into making this organization a success. Sound interesting? Help us achieve our mission!</p>
+                        <div class="col-lg-4">
+                            <div class="faq-block">
+                                <h4 class="faq-block-title">How can I join?</h4>
+                                <p class="faq-text">We have 7 separate teams: Leadership, Content Creation, Outreach, Social Media, Management, Design, and Global Teams. You can apply to join multiple teams. Many potential team members expressed interest in getting involved in more than one team, so if you are not a member of the Core or Ambassador Team, you can be involved in a maximum of 3 teams. Make sure not to overexert yourself; while we are as passionate about this as you are, we do not expect this to take priority over school work! To apply, follow <a href="https://bit.ly/HAXapply" target="_">this link</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="faq-block">
+                                <h4 class="faq-block-title">Who started HAX?</h4>
+                                <p class="faq-text">HAX is the brain-child of Justina Chua and a team of absolutely charming, dilligent high school and college students. Hours have been put into making this organization a success. Sound interesting? Help us achieve our mission!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 </body>
 <footer>
     <div id="footer">
-        <br></br>
         <a href="mailto:team@haxorg.io" style="text-decoration:none;">
             <i class="fas fa-envelope"></i>
         </a>
@@ -97,9 +107,10 @@
         <a href="https://www.twitter.com/hax_org/" target="_" style="text-decoration:none;">
             <i class="fab fa-twitter"></i>
         </a>
-        <br></br>
-
         <p>©2019 HAX. Built & designed by <a href="https://carolinechoi.netlify.com">Caroline Choi</a> with 💕</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </footer>
 </html>
