@@ -55,6 +55,10 @@ section {
     right: 0;
     margin-right: 30px;
   }
+
+  .nav-link {
+    margin-right: 20px;
+  }
 }
 
 .active .nav-link {
@@ -129,7 +133,6 @@ section {
 
 .faq-section-title {
   text-align: center;
-  font-size: 30px;
   margin-bottom: 50px;
   font-weight: 400;
 }
@@ -146,7 +149,6 @@ section {
 }
 
 .faq-text {
-  font-size: 15px;
   font-weight: 500;
 }
 
