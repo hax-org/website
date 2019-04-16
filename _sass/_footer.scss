@@ -1,0 +1,31 @@
+@import "variables";
+
+/* FOOTER */
+
+footer a i {
+  font-size: 20px;
+  color: white;
+  margin: 4px;
+  background-color: $purple;
+  border: 2px solid $purple;
+  display: inline-block;
+  border-radius: 70px;
+  padding: 0.4em 0.425em;
+  transition: .2s all;
+}
+
+footer a i:hover {
+  color: $purple;
+  background-color: transparent;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 12px;
+}
