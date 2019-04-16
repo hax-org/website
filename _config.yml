@@ -1,0 +1,13 @@
+title: HAX
+description: A global nonprofit dedicated to making computer science education accessible, one hackathon at a time. We're proud to be #BUILTBYGIRLS. Ad astra!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  style: compressed
