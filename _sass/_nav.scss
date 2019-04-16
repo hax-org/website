@@ -1,0 +1,39 @@
+/* NAVBAR */
+.navbar {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: #aaadb3;
+  text-transform: capitalize;
+  transition: .2s all;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: $lg) {
+  nav {
+    height: 96px;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+  }
+
+  .nav-link {
+    margin-right: 20px;
+  }
+}
+
+.active .nav-link {
+  color: $purple !important;
+}
+
+.nav-link:hover {
+  color: $purple !important;;
+}
