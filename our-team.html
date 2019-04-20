@@ -1,0 +1,47 @@
+---
+layout: default
+title: Our Team
+---
+<div class="our-team-heading">
+	<h1>Our Team</h1>
+	<p>Some kind of mission statement here.</p>
+</div>
+<div class="row equal">
+	{% for person in site.bios %}
+		<div class="col-lg-6 col-bio">
+			<div class="bio-container">
+				<img class="bio-image" src="{{person.image_url}}">
+				<div>
+					<h3 class="bio-title">{{person.name}}</h3>
+					<p class="bio-team">{{person.team}}</p>
+					<p class="bio-text">{{person.description}}</p>
+					<div class="bio-icons">
+						{% if person.email and person.email != "" and person.email != nil %}
+			                <a href="mailto:{{person.email}}"><i class="fas fa-envelope"></i></a>
+		                {% endif %}
+		                {% if person.facebook and person.facebook != "" and person.facebook != nil %}
+			                <a href="{{person.facebook}}" target="_">
+			                    <i class="fab fa-facebook"></i>
+			                </a>
+			            {% endif %}
+			            {% if person.instagram and person.instagram != "" and person.instagram != nil %}
+			                <a href="{{person.instagram}}" target="_">
+			                    <i class="fab fa-instagram"></i>
+			                </a>
+		                {% endif %}
+		                {% if person.twitter and person.twitter != "" and person.twitter != nil %}
+			                <a href="{{person.twitter}}" target="_">
+			                    <i class="fab fa-twitter"></i>
+			                </a>
+			            {% endif %}
+			            {% if person.linkedin and person.linkedin != "" and person.linkedin != nil %}
+			                <a href="{{person.linkedin}}" target="_">
+			                    <i class="fab fa-linkedin"></i>
+			                </a>
+			            {% endif %}
+		            </div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>

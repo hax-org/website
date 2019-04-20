@@ -24,7 +24,7 @@
 }
 
 #welcome-message {
-  margin-top: 10%;
+  margin-top: 12.5%;
 
   #title {
     font-size: 40px;
@@ -37,24 +37,4 @@
     font-weight: 400;
   }
 
-}
-
-#hero-btn {
-  background-color: $purple;
-  /* pretend border */
-  border: 2px solid $purple;
-  border-radius: 0;
-  padding: 1.15em 2.3em;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-weight: medium;
-  margin-top: 10px;
-  transition: .2s all;
-  &:hover {
-    background-color: transparent;
-    color: $purple;
-  }
 }
