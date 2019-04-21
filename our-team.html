@@ -17,7 +17,14 @@ title: Our Team
 					<p class="bio-text">{{person.description}}</p>
 					<div class="bio-icons">
 						{% if person.email and person.email != "" and person.email != nil %}
-			                <a href="mailto:{{person.email}}"><i class="fas fa-envelope"></i></a>
+			                <a href="mailto:{{person.email}}">
+			                	<i class="fas fa-envelope"></i>
+			                </a>
+		                {% endif %}
+		                {% if person.website and person.website != "" and person.website != nil %}
+			                <a href="mailto:{{person.email}}">
+			                	<i class="fas fa-link"></i>
+							</a>
 		                {% endif %}
 		                {% if person.facebook and person.facebook != "" and person.facebook != nil %}
 			                <a href="{{person.facebook}}" target="_">
