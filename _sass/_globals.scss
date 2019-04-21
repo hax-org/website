@@ -9,8 +9,14 @@ html, body {
 
 .main {
   background-color: #fff4e4;
-  min-height: 70vh;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.large-padding {
+  /* adds even more padding on to padding from main */
+  @media (min-width: $lg) {
+    padding: 3% 0;
+  }
 }
 
 * {
@@ -25,10 +31,6 @@ a:hover {
   text-decoration: none;
   color: black;
   transition: .2s all;
-}
-
-section {
-  padding: 0 20px 50px;
 }
 
 button {
