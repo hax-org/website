@@ -26,7 +26,7 @@ end
 
 def formatDesc(desc)
 	unless desc.nil?
-		return desc.gsub("\n","")
+		return '"' + desc.gsub("\n","") + '"'
 	end
 	return desc
 end
@@ -54,7 +54,7 @@ CSV.parse(File.readlines('data.csv').drop(2).join) do |row|
 	temp_person["snapchat"] = formatLink(row[15])
 
 	Dir.chdir("../_bios")
-	f = File.open("#{i}.md", "w")
+	f = File.open("#{temp_person["name"]}.md", "w")
 	f.write("---\n")
 	temp_person.each do |key, value|
 		f.write("#{key}: #{value}\n")
