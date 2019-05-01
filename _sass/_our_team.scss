@@ -6,6 +6,12 @@ $bio-container-padding: 30px;
 	margin-bottom: 70px
 }
 
+
+.readmore {
+  overflow: hidden;
+}
+
+
 .col-bio {
 	margin-bottom: 30px;
 }
@@ -34,11 +40,29 @@ $bio-container-padding: 30px;
 	}
 }
 
-.bio-team {
+.bio-content {
+	width: 100%;
+}
+
+.bio-title {
 	font-weight: 500;
 }
 
+.bio-position {
+	font-weight: 500;
+
+	/* annoying hacky thing I had to do to get the margins to be ok */
+	/* readmore link doesn't respond to css... */
+	margin-bottom: -10px;
+}
+
+.bio-text {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
 .bio-icons {
+	margin-top: 20px;
 	i {
 		font-size: 20px;
 		padding: 0 !important;

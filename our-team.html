@@ -4,17 +4,21 @@ title: Our Team
 ---
 <div class="our-team-heading">
 	<h1>Our Team</h1>
-	<p>Some kind of mission statement here.</p>
+	<!-- TODO: someone write a mission statement -->
+	<!-- <p></p> -->
 </div>
 <div class="row equal">
-	{% for person in site.bios %}
+	{% assign bios = site.bios | sort: "order" %}
+	{% for person in bios %}
 		<div class="col-lg-6 col-bio">
 			<div class="bio-container">
 				<img class="bio-image" src="{{person.image_url}}">
-				<div>
+				<div class="bio-content">
 					<h3 class="bio-title">{{person.name}}</h3>
-					<p class="bio-team">{{person.team}}</p>
-					<p class="bio-text">{{person.description}}</p>
+					<p class="bio-position">{{person.position}}</p>
+					{% if person.description %}
+						<p class="bio-text readmore">{{person.description}}</p>
+					{% endif %}
 					<div class="bio-icons">
 						{% if person.email and person.email != "" and person.email != nil %}
 			                <a href="mailto:{{person.email}}">
@@ -22,7 +26,7 @@ title: Our Team
 			                </a>
 		                {% endif %}
 		                {% if person.website and person.website != "" and person.website != nil %}
-			                <a href="mailto:{{person.email}}">
+			                <a href="{{person.website}}">
 			                	<i class="fas fa-link"></i>
 							</a>
 		                {% endif %}
@@ -36,6 +40,11 @@ title: Our Team
 			                    <i class="fab fa-instagram"></i>
 			                </a>
 		                {% endif %}
+		                {% if person.github and person.github != "" and person.github != nil %}
+			                <a href="{{person.github}}" target="_">
+			                    <i class="fab fa-github"></i>
+			                </a>
+			            {% endif %}
 		                {% if person.twitter and person.twitter != "" and person.twitter != nil %}
 			                <a href="{{person.twitter}}" target="_">
 			                    <i class="fab fa-twitter"></i>
@@ -44,6 +53,21 @@ title: Our Team
 			            {% if person.linkedin and person.linkedin != "" and person.linkedin != nil %}
 			                <a href="{{person.linkedin}}" target="_">
 			                    <i class="fab fa-linkedin"></i>
+			                </a>
+			            {% endif %}
+			            {% if person.youtube and person.youtube != "" and person.youtube != nil %}
+			                <a href="{{person.youtube}}" target="_">
+			                    <i class="fab fa-youtube"></i>
+			                </a>
+			            {% endif %}
+			            {% if person.snapchat and person.snapchat != "" and person.snapchat != nil %}
+			                <a href="{{person.snapchat}}" target="_">
+			                    <i class="fab fa-snapchat-ghost"></i>
+			                </a>
+			            {% endif %}
+			            {% if person.discord and person.discord != "" and person.discord != nil %}
+			                <a href="{{person.discord}}" target="_">
+			                    <i class="fab fa-discord"></i>
 			                </a>
 			            {% endif %}
 		            </div>
