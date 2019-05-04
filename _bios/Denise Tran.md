@@ -3,7 +3,7 @@ order: 16
 name: Denise Tran
 position: Member of Web Development
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Denise Tran.jpg
 facebook: 
 twitter: 
 website: 

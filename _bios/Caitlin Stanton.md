@@ -1,9 +1,9 @@
 ---
 order: 14
 name: Caitlin Stanton
-position: Member of The Management And Content Creation Teams
+position: Member of the Management and Content Creation Teams
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Caitlin Stanton.jpg
 facebook: 
 twitter: 
 website: https://caitlin.site

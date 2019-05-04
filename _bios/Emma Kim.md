@@ -1,9 +1,9 @@
 ---
 order: 18
 name: Emma Kim
-position: Member of Design And Social Media
+position: Member of Design and Social Media
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Emma Kim.jpeg
 facebook: 
 twitter: 
 website: 

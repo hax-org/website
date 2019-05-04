@@ -3,7 +3,7 @@ order: 21
 name: Mehak Garg
 position: Member of Design Team
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Mehak Garg.png
 facebook: 
 twitter: 
 website: 

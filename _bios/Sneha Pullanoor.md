@@ -1,9 +1,9 @@
 ---
 order: 24
 name: Sneha Pullanoor
-position: Member of Content Creation And Management
+position: Member of Content Creation and Management
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: 
 facebook: https://m.facebook.com/Snehapullanoor?ref=bookmarks
 twitter: 
 website: 

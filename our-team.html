@@ -12,7 +12,9 @@ title: Our Team
 	{% for person in bios %}
 		<div class="col-lg-6 col-bio">
 			<div class="bio-container">
-				<img class="bio-image" src="{{person.image_url}}">
+				{% if person.image_url and person.image_url != "" and person.image_url != nil %}
+					<img class="bio-image" src="{{person.image_url}}">
+				{% endif %}
 				<div class="bio-content">
 					<h3 class="bio-title">{{person.name}}</h3>
 					<p class="bio-position">{{person.position}}</p>

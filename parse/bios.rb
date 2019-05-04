@@ -31,6 +31,14 @@ def formatDesc(desc)
 	return desc
 end
 
+def imageUrl(image_url)
+	unless image_url.nil?
+		return "/assets/images/bios/#{image_url}"
+	else
+		return nil
+	end 
+end
+
 i = 0;
 # drop 2 to remove header rows
 CSV.parse(File.readlines('data.csv').drop(2).join) do |row|
@@ -40,8 +48,7 @@ CSV.parse(File.readlines('data.csv').drop(2).join) do |row|
 	temp_person["name"] = row[1]
 	temp_person["position"] = row[2]
 	temp_person["description"] = formatDesc(row[3])
-	# temp_person["image_url"] = row[4]
-	temp_person["image_url"] = "/assets/images/bios/prof.png"
+	temp_person["image_url"] = imageUrl(row[16])
 	temp_person["facebook"] = formatLink(row[6])
 	temp_person["twitter"] = formatLink(row[7])
 	temp_person["website"] = formatLink(row[8])

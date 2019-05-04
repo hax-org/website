@@ -1,9 +1,9 @@
 ---
 order: 20
 name: Maura McDougall
-position: Member of Content Creation And Management
+position: Member of Content Creation and Management
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Maura McDougall.jpg
 facebook: 
 twitter: 
 website: 

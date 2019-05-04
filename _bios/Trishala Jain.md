@@ -1,9 +1,9 @@
 ---
 order: 26
 name: Trishala Jain
-position: Member of Outreach And Management
+position: Member of Outreach and Management
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Trishala Jain.jpeg
 facebook: 
 twitter: 
 website: 

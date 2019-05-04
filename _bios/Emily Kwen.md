@@ -3,7 +3,7 @@ order: 17
 name: Emily Kwen
 position: Member of Social Media Team, Member of Design Team
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Emily Kwen.jpeg
 facebook: 
 twitter: 
 website: 

@@ -1,9 +1,9 @@
 ---
 order: 23
 name: Shivali Gulati
-position: Member of Content Creation Team.
+position: Member of Content Creation Team
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Shivali Gulati.jpg
 facebook: 
 twitter: https://twitter.com/shivig121
 website: https://shivaligulati.wixsite.com/girlonline

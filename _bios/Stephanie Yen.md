@@ -3,7 +3,7 @@ order: 25
 name: Stephanie Yen
 position: Member of Content Creation & Management Teams
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Stephanie Yen.JPG
 facebook: 
 twitter: 
 website: 

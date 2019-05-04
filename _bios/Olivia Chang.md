@@ -3,7 +3,7 @@ order: 22
 name: Olivia Chang
 position: Member of Web Development
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Olivia Chang.JPG
 facebook: 
 twitter: 
 website: https://www.oliviachang.me/

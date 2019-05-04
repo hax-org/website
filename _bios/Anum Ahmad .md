@@ -1,9 +1,9 @@
 ---
 order: 13
 name: Anum Ahmad 
-position: Member of Design, Management, And Outreach!
+position: Member of Design, Management, and Outreach
 description: 
-image_url: /assets/images/bios/prof.png
+image_url: /assets/images/bios/Anum Ahmad.jpg
 facebook: 
 twitter: 
 website: 
