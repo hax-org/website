@@ -1,0 +1,108 @@
+@import "variables";
+
+/* ABOUT */
+
+#about {
+  padding: 100px 0 120px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .about-text {
+    margin-bottom: 40px;
+    @media (min-width: $md) {
+      width: 60%;
+    }
+  }
+}
+
+.link-with-icon {
+  font-size: 18px;
+  font-weight: 500;
+  i {
+    margin-left: 5px;
+    transition: .2s all;
+  }
+  &:hover {
+    color: $purpledark;
+    i {
+      margin-left: 15px
+    }
+  }
+}
+
+/* WHAT WE DO */
+
+#what-we-do {
+  padding: 100px 0;
+  img {
+    width: 80%;
+    margin: 50px 0;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.number-block {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  margin-bottom: 30px
+}
+
+/* QUOTE */
+
+#quote {
+  padding: 70px 0;
+  text-align: center;
+  h2 {
+    margin-bottom: 30px;
+    line-height: 45px;
+  }
+  p {
+    font-style: italic;
+  }
+}
+
+/* FAQ */
+#faq {
+  padding: 70px 0;
+}
+
+.faq-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.faq-block {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 30px;
+  @media (min-width: $md) {
+    margin-bottom: 0;
+  }
+}
+
+.faq-block-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.faq-text {
+  font-weight: 400;
+}
+
+/* INTEREST */
+#interest {
+  padding: 70px 0 90px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 40px; 
+  }
+  text-align: center;
+
+}

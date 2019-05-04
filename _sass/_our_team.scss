@@ -3,9 +3,18 @@ $bio-container-padding: 30px;
 
 .our-team-heading {
 	text-align: center;
-	margin-bottom: 70px
+	padding-bottom: 50px;
+	/*border-bottom: 1px solid #e2e2e2;*/
 }
 
+.stats-container {
+	width: 300px;
+	margin: 20px auto;
+}
+
+.stat-container {
+	width: 100px;
+}
 
 .readmore {
   overflow: hidden;

@@ -7,16 +7,30 @@ html, body {
   margin: 0;
 }
 
-.main {
-  background-color: #fff4e4;
-  padding: 50px 0;
+/* SECTION STYLES */
+
+section {
+  padding: 50px 20px;
 }
 
-.large-padding {
-  /* adds even more padding on to padding from main */
-  @media (min-width: $lg) {
-    padding: 3% 0;
-  }
+.section-white-bg {
+  background-color: white;
+}
+
+.section-purple-bg {
+  background-color: $purple;
+}
+
+.section-color-bg {
+  background-color: $bgcolor; 
+}
+
+.section-gray-bg {
+  background-color: #F9F9FA;
+}
+
+.section-large-padding {
+  padding: 5% 0;
 }
 
 * {
@@ -71,3 +85,15 @@ button {
   display: -webkit-flex;
   flex-wrap: wrap;
 }
+
+.title-centered {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  /*height: 300px;*/
+  /*display: flex;
+  justify-content: center;*/
+}
+

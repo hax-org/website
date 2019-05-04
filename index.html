@@ -1,6 +1,13 @@
 ---
-layout: large-padding
+layout: default
 title: Home
 ---
-{% include hero.html %}
-{% include faq.html %}
+<!-- so we can apply styles across sections -->
+<div id="home">
+	{% include home/hero.html %}
+	{% include home/about.html %}
+	<!-- {% include home/quote.html %} -->
+	{% include home/what-we-do.html %}
+	<!-- {% include home/faq.html %} -->
+	{% include home/interest.html %}
+</div>

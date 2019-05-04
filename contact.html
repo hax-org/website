@@ -1,33 +1,35 @@
 ---
+layout: default
 title: Contact Us
-layout: large-padding
 ---
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 offset-lg-3">
-			<h1>Contact us</h1>
-			<p>We're glad you want to talk to us! Fill out this form and we'll be in touch shortly.</p>
-			<form id="contact-form" name="contact" method="POST" action="/success" netlify netlify-honeypot="bot-field">
-			  <div class="form-group">
-			    <label for="name">Name</label>
-			    <input type="text" class="form-control" id="name" placeholder="Enter your first and last name">
-			  </div>
-			  <div class="form-group">
-			    <label for="email">Email address</label>
-			    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-			  </div>
-			  <div class="form-group">
-			    <label for="message">Message</label>
-			    <textarea class="form-control" id="message" placeholder="Leave us a message. Be nice, there's a human on the other end :)" rows="5"></textarea>
-			  </div>
+<section class="section-color-bg section-large-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<h1>Contact us</h1>
+				<p>We're glad you want to talk to us! Fill out this form and we'll be in touch shortly.</p>
+				<form id="contact-form" name="contact" method="POST" action="/success" netlify netlify-honeypot="bot-field">
+				  <div class="form-group">
+				    <label for="name">Name</label>
+				    <input type="text" class="form-control" id="name" placeholder="Enter your first and last name">
+				  </div>
+				  <div class="form-group">
+				    <label for="email">Email address</label>
+				    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+				  </div>
+				  <div class="form-group">
+				    <label for="message">Message</label>
+				    <textarea class="form-control" id="message" placeholder="Leave us a message. Be nice, there's a human on the other end :)" rows="5"></textarea>
+				  </div>
 
-			  <!-- Netlify automatically adds Captcha -->
-			  <div data-netlify-recaptcha="true"></div>
-			  <!-- Hidden field - bots will fill it out, and Netlify filters them out -->
-			  <div class="honeypot"><input name="bot-field" /></div>
-			  
-			  <button type="submit" class="contact-button">Submit</button>
-			</form>
+				  <!-- Netlify automatically adds Captcha -->
+				  <div data-netlify-recaptcha="true"></div>
+				  <!-- Hidden field - bots will fill it out, and Netlify filters them out -->
+				  <div class="honeypot"><input name="bot-field" /></div>
+				  
+				  <button type="submit" class="contact-button">Submit</button>
+				</form>
+			</div>
 		</div>
 	</div>
-</div>
+</section>

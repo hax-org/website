@@ -1,5 +1,7 @@
 # HAX Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/16be9979-eeff-4894-8891-2935a1046932/deploy-status)](https://app.netlify.com/sites/haxorg/deploys)
+
 This site runs on Jekyll. Make sure you have Ruby and Bundler installed. [Here's the Jekyll installation guide.](https://jekyllrb.com/docs/installation/)
 
 ## Install
@@ -43,3 +45,6 @@ That should update the `_bios` folder.
 * Let's keep third party stuff in node_modules, if possible
 * Try to cut down on long files by using `_includes`
 
+## Deployment
+
+The site is hosted on Netlify, with CI. Any changes to the `master` branch on Github will automatically show up on the website.
