@@ -3,7 +3,8 @@
 /* ABOUT */
 
 #about {
-  padding: 100px 0 120px;
+  padding-top: 100px;
+  padding-bottom: 120px;
   h2 {
     margin-bottom: 30px;
   }
@@ -33,10 +34,11 @@
 /* WHAT WE DO */
 
 #what-we-do {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   img {
     width: 80%;
-    margin: 50px 0;
+    margin: 50px auto;
   }
   h1 {
     margin-bottom: 40px;
@@ -54,7 +56,8 @@
 /* QUOTE */
 
 #quote {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
   h2 {
     margin-bottom: 30px;
@@ -67,7 +70,8 @@
 
 /* FAQ */
 #faq {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .faq-section-title {
@@ -96,7 +100,8 @@
 
 /* INTEREST */
 #interest {
-  padding: 70px 0 90px;
+  padding-top: 70px;
+  padding-bottom: 90px;
   h2 {
     margin-bottom: 20px;
   }

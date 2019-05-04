@@ -2,9 +2,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/16be9979-eeff-4894-8891-2935a1046932/deploy-status)](https://app.netlify.com/sites/haxorg/deploys)
 
-This site runs on Jekyll. Make sure you have Ruby and Bundler installed. [Here's the Jekyll installation guide.](https://jekyllrb.com/docs/installation/)
+This site runs on Jekyll. 
 
 ## Install
+Make sure you have Ruby and Bundler installed. [Here's the Jekyll installation guide.](https://jekyllrb.com/docs/installation/)
 ```
 git clone https://github.com/hax-org/website.git
 cd website
@@ -47,4 +48,4 @@ That should update the `_bios` folder.
 
 ## Deployment
 
-The site is hosted on Netlify, with CI. Any changes to the `master` branch on Github will automatically show up on the website.
+The site is hosted on Netlify, with CI. Any changes to the `master` branch on Github will automatically show up on the website. Changes to the staging branch will show up at https://staging--haxorg.netlify.com.
