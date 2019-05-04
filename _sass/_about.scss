@@ -1,0 +1,26 @@
+.mission-container {
+  margin: 0 auto 50px;
+  text-align: center;
+  @media (min-width: $md) {
+    width: 80%;
+  }
+  @media (min-width: $lg) {
+    width: 70%;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    /*margin-bottom: 3%;*/
+  }
+  
+}

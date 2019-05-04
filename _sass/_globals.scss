@@ -5,6 +5,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* SWUP */
@@ -104,11 +105,4 @@ button {
   /*height: 300px;*/
   /*display: flex;
   justify-content: center;*/
-}
-
-/* LINKS */
-.hidden-nav {
-  .navbar-nav {
-    display: none;
-  }
 }
