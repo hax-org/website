@@ -20,6 +20,14 @@ $bio-container-padding: 30px;
   overflow: hidden;
 }
 
+.readmore-link {
+	/* only listens to color when you say it's important */
+	color: $purple !important;
+	cursor: pointer;
+	&:hover {
+		color: $purpledark !important;
+	}
+}
 
 .col-bio {
 	margin-bottom: 30px;
