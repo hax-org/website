@@ -16,6 +16,7 @@ function initJS() {
 	}).removeClass('active');
 
 	if (!readmore_enabled &&  currentWindow() == 'our-team') {
+		$('.readmore').readmore('destroy');
 	  $('.readmore').readmore({
 	  	speed: 100,
 	  	collapsedHeight: 100,
@@ -37,9 +38,9 @@ function initJS() {
 
 $(function() {
 	initJS()
-  const swup = new Swup();
+ //  const swup = new Swup();
 
-  swup.on('contentReplaced', function () {
-    initJS();
-	});
+ //  swup.on('contentReplaced', function () {
+ //    initJS();
+	// });
 });
