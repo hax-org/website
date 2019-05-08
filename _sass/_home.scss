@@ -37,11 +37,22 @@
   padding-top: 100px;
   padding-bottom: 100px;
   img {
-    width: 80%;
-    margin: 50px auto;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+    @media (min-width: $md) {
+      margin: 0 40px 50px 0px;  
+    }
   }
   h1 {
     margin-bottom: 40px;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -98,6 +109,49 @@
   font-weight: 400;
 }
 
+/* organizations */
+
+.organizations-text {
+  text-align: center;
+}
+
+.organizations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  @media (min-width: $sm) {
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto 10px;
+  }
+
+  img {
+    @media (min-width: $sm) {
+      width: auto;
+      margin: 0 20px;
+    }
+  }
+}
+
+.organization-gwc {
+  width: 50%;
+  margin-bottom: 30px;
+  @media (min-width: $sm) {
+    height: 60px;
+  }
+}
+
+.organization-bbg {
+  width: 80%;
+  @media (min-width: $sm) {
+    margin-top: 10px;
+    height: 30px;
+  }
+}
+
+
 /* INTEREST */
 #interest {
   padding-top: 70px;
@@ -110,4 +164,52 @@
   }
   text-align: center;
 
+}
+
+.mailing-list-container {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: $md) {
+    width: 70%;
+  }
+  @media (min-width: $lg) {
+    width: 50%;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+#mailing-list-form {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+#email-input {
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  @media (min-width: $md) {
+    width: 50%;
+    margin-right: 15px;
+  }
+}
+
+.mailing-list-button {
+  margin: 20px auto 0;
+  
+  
+  @media (min-width: $md) {
+    padding: 0;
+    width: 50%;
+    height: 50px;
+    margin: 0;
+  }
 }
