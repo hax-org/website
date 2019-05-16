@@ -1,0 +1,19 @@
+---
+---
+/* Here we include all of our sass files. Order these statements in the order in which they appear*/
+
+/* Global */
+@import "globals";
+@import "typography";
+@import "nav";
+@import "footer";
+
+/* Front page */
+@import "hero";
+@import "faq";
+
+/* Our Team*/
+@import "our_team";
+
+/* Contact */
+@import "contact";

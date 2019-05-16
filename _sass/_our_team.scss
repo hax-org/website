@@ -1,0 +1,85 @@
+@import "variables";
+$bio-container-padding: 30px;
+
+.our-team-heading {
+	text-align: center;
+	margin-bottom: 70px
+}
+
+
+.readmore {
+  overflow: hidden;
+}
+
+
+.col-bio {
+	margin-bottom: 30px;
+}
+
+.bio-container {
+	height: 100%;
+	padding: $bio-container-padding;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	@media (min-width: $md) {
+		flex-direction: row;
+		text-align: left;
+	}
+}
+
+.bio-image {
+	margin: 0 auto 20px;
+	width: 75px;
+	height: 75px;
+	border-radius: 75px;
+
+	@media (min-width: $md) {
+		width: auto;
+		margin-right: $bio-container-padding;
+	}
+}
+
+.bio-content {
+	width: 100%;
+}
+
+.bio-title {
+	font-weight: 500;
+}
+
+.bio-position {
+	font-weight: 500;
+
+	/* annoying hacky thing I had to do to get the margins to be ok */
+	/* readmore link doesn't respond to css... */
+	margin-bottom: -10px;
+}
+
+.bio-text {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.bio-icons {
+	margin-top: 20px;
+	i {
+		font-size: 20px;
+		padding: 0 !important;
+		margin-top: 5px;
+		color: gray;
+		&:hover {
+	      color: $purple;
+	    }
+
+	    /* This keeps it centered in mobile */
+	    margin-left: 10px;
+	    margin-right: 10px;
+	    /* In md+, everything is aligned left anyway */
+	    @media (min-width: $md) {
+	    	margin-left: 0;
+	    	margin-right: 10px;
+	    }
+	}
+}

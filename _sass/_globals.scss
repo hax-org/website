@@ -1,0 +1,73 @@
+@import "variables";
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: #fff4e4;
+  padding: 50px 0;
+}
+
+.large-padding {
+  /* adds even more padding on to padding from main */
+  @media (min-width: $lg) {
+    padding: 3% 0;
+  }
+}
+
+* {
+  font-family: $mfont,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+  color: $purple;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  transition: .2s all;
+}
+
+button {
+  color: white;
+  background-color: $purple;
+  /* pretend border */
+  border: 2px solid $purple;
+  border-radius: 0;
+  padding: 1.15em 2.3em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: medium;
+  margin-top: 10px;
+  transition: .2s all;
+  &:hover {
+    background-color: transparent;
+    color: $purple;
+  }
+}
+
+#page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height:50vh;
+
+  button {
+    margin-top: 30px;
+  }
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
