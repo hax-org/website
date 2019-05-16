@@ -12,7 +12,14 @@ layout: large-padding
         touch shortly.
       </p>
 
-      <form id="contact-form" name="contact" method="POST" action="/success">
+      <form
+        id="contact-form"
+        name="contact"
+        method="POST"
+        action="/success.html"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <div class="form-group">
           <label for="name">Name</label>
           <input
