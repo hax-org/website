@@ -34,12 +34,12 @@ Open browser and navigate to `localhost:4000`.
 All of the styling goes in the `_sass` folder. Each time you create a new .scss file, you'll need to include it in `/assets/css/main_css_file.scss` with an import statement.
 
 ### Generating bios
-Download csv for formatted form responses and update data.csv with the file you just downloaded.
+Don't edit the `_bios` folder directly! Any changes will be overwritten when the parse program is run. Instead, download csv for *formatted* form responses (should be in the HAX Team Drive - contact Quinna for access) and update `data.csv` with the new csv you just downloaded.
 ```
 cd parse
 ruby bios.rb
 ```
-That should update the `_bios` folder.
+That will update the `_bios` folder.
 
 ### Misc
 * New pages go in the root directory
