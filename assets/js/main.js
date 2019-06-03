@@ -45,13 +45,13 @@ function onPageChange() {
 
 $(function() {
 	initJS()
-  swup = new Swup();
+ //  swup = new Swup();
 
-  swup.on('contentReplaced', function () {
-    onPageChange();
-    initJS()
-    if (readmore_enabled == false) {
-    	addReadmore()
-    }
-	});
+ //  swup.on('contentReplaced', function () {
+ //    onPageChange();
+ //    initJS()
+ //    if (readmore_enabled == false) {
+ //    	addReadmore()
+ //    }
+	// });
 });
