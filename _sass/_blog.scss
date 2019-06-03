@@ -58,11 +58,16 @@
 		margin-left: 30px;
 		position: absolute;
 		background-color: #00000075;
-		border-left: 2px solid white;
+		border-left: 2px solid $bgcolor;
 		color: white;
 	}
 
 	&:hover {
 		background-size: 105%;
 	}
+}
+
+.post-tag {
+	color: $bgcolor;
+	font-weight: bold;
 }

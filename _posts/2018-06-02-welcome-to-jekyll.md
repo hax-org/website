@@ -6,7 +6,7 @@ author: "Jane Doe"
 author_desc: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 date: 2019-6-2 00:00:00 -0800
 tags: ["jekyll", "update"]
-image_url: "/assets/images/about/2.jpg"
+cover: "/assets/images/about/2.jpg"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -5,7 +5,7 @@ subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 date:   2019-6-3 00:00:00 -0800
 author: "Jane Doe"
 author_desc: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-image_url: "/assets/images/about/1.jpg"
+cover: "/assets/images/about/1.jpg"
 tags: ["hackathon", "tech"]
 ---
 This page is a demo that shows everything you can do inside blog posts.
