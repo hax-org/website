@@ -15,4 +15,7 @@ collections:
   bios:
     title: Bio
     output: false
+  posts:
+    title: Post
+    output: true
 exclude: [parse]

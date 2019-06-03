@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="section-white-bg post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post-info">
+					<p class="post-date">{{page.date | date_to_string}}</p>
+					<h1 class="post-title">{{page.title}}</h1>
+					<p class="post-subheading">{{page.subheading}}</p>
+				</div>
+				<img class="lazy post-image" src="/assets/images/lazy.jpg" data-src="{{page.image_url}}">
+				{{ content }}
+			</div>
+			<div class="col-md-4">
+				<div class="right-col">
+					<div class="col-group">
+						<h4 class="col-group-title">Author</h4>
+						<div class="author-container">
+							<img src="/assets/images/prof.png">
+							<div class="author-info">
+								<p class="author-name">{{page.author}}</p>
+								<p class="author-desc">{{page.author_desc}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-group">
+						<h4 class="col-group-title">Share</h4>
+					</div>
+					<div class="col-group">
+						<h4 class="col-group-title">Tags</h4>
+					</div>
+					<div class="col-group">
+						<h4 class="col-group-title">Recent Posts</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
