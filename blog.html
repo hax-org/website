@@ -3,51 +3,26 @@ layout: default
 ---
 <section class="section-gray-bg">
   <div class="container">
-    <a href="{{site.posts.first.url}}">
-      <div class="post-card" id="first-post" class="lazy" data-bg="url(/assets/images/lazy.jpg)" style="background-image:url('{{site.posts.first.cover}}')">
-        <!-- <img class="lazy" src="/assets/images/lazy.jpg" data-src="{{site.posts.first.cover}}"> -->
-        <div class="post-content">
-          <p>{{site.posts.first.date | date_to_string}}</p>
-          <h2 class="post-title">{{site.posts.first.title}}</h2>
-          <p class="post-subheading">{{site.posts.first.subheading}}</p>
-          <p class="post-tags">
-            {% for tag in site.posts.first.tags %}
-              <!-- change back to normal tags when tags is finally working -->
-              <span class="post-tag">#{{tag}}</span>
-            {% endfor %}
-          </p>
-        </div>
-      </div>
-    </a>
-    <div class="row">
+    <div class="show-md-up">
+      {% include blog/post-card-large.html post=site.posts.first %}
+    </div>
+    <div class="show-md-down">
+      {% include blog/post-card-small.html post=site.posts.first %}
+    </div>
+    <div class="row equal">
       {% for post in site.posts %}
         <!-- Skip the first post -->
         {% unless forloop.first %}
-        <div class="equal {% cycle
-          'col-sm-4',
-          'col-sm-4',
-          'col-sm-4',
-          'col-sm-6',
-          'col-sm-6' %}">
-          <a href="{{post.url}}">
-            <div class="post-card post-card-small">
-              <div class="image-container">
-                <img class="lazy post-image" src="/assets/images/lazy.jpg" data-src="{{post.cover}}">
-              </div>
-              <div class="post-card-content">
-                <p class="post-date">{{post.date | date_to_string}}</p>
-                <h3 class="post-title">{{post.title}}</h3>
-                <p class="post-subheading">{{post.subheading}}</p>
-                <div class="author-container">
-                  <img src="/assets/images/prof.png">
-                  <p>{{post.author}}</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endunless %}
-    {% endfor %}
+          <div class="col-post-card {% cycle
+            'col-lg-4 col-md-6',
+            'col-lg-4 col-md-6',
+            'col-lg-4 col-md-6',
+            'col-lg-6 col-md-6',
+            'col-lg-6 col-md-12' %}">
+            {% include blog/post-card-small.html post=post %}
+          </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
   </div>
-</div>
 </section>

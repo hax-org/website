@@ -1,7 +1,7 @@
 title: HAX
 description: A global nonprofit dedicated to making computer science education accessible, one hackathon at a time. We're proud to be BUILTBYGIRLS. Ad astra!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://haxorg.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -18,4 +18,5 @@ collections:
   posts:
     title: Post
     output: true
+    permalink: /blog/:year/:month/:day/:title:output_ext
 exclude: [parse]

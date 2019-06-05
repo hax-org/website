@@ -4,16 +4,18 @@ layout: default
 <section class="section-white-bg post">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-lg-8">
 				<div class="post-info">
 					<p class="post-date">{{page.date | date_to_string}}</p>
 					<h1 class="post-title">{{page.title}}</h1>
 					<p class="post-subheading">{{page.subheading}}</p>
 				</div>
 				<img class="lazy post-image" src="/assets/images/lazy.jpg" data-src="{{page.cover}}">
-				{{ content }}
+				<div class="post-content">
+					{{ content }}
+				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4">
 				<div class="right-col">
 					<div class="col-group">
 						<h4 class="col-group-title">Author</h4>
@@ -27,12 +29,15 @@ layout: default
 					</div>
 					<div class="col-group">
 						<h4 class="col-group-title">Share</h4>
+						{% include blog/share-icons.html %}
+						<!-- include an rss feed -->
 					</div>
 					<div class="col-group">
 						<h4 class="col-group-title">Tags</h4>
 					</div>
 					<div class="col-group">
-						<h4 class="col-group-title">Recent Posts</h4>
+						<h4 class="col-group-title">Latest Tweets</h4>
+						<a class="twitter-timeline" data-height="1000" data-dnt="true" data-link-color="#6800fa" href="https://twitter.com/HAX_org?ref_src=twsrc%5Etfw">Tweets by HAX_org</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
 				</div>
 			</div>

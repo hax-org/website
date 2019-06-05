@@ -113,8 +113,16 @@ section {
   margin-bottom: 50px;
 }
 
-.image-container {
-  /*height: 300px;*/
-  /*display: flex;
-  justify-content: center;*/
+.show-md-up {
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+  }
+}
+
+.show-md-down {
+  display: block;
+  @media (min-width: $md) {
+    display: none;
+  }
 }

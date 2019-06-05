@@ -16,3 +16,11 @@ $lg: 992px;
   -o-transition: all 0.25s; /* Opera */
   transition: all 0.25s;
 }
+
+@mixin scale-larger-transition {
+	-webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+     transform:scale(1.05);
+}
