@@ -184,7 +184,7 @@
   }
 }
 
-#mailing-list-form {
+.mailing-list-form {
   display: flex;
   flex-direction: column;
   @media (min-width: $md) {
@@ -192,7 +192,7 @@
   }
 }
 
-#email-input {
+.email-input {
   height: 50px;
   width: 80%;
   margin: 0 auto;
