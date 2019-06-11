@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update
+publish_mode: editorial_workflow
+media_folder: "/assets/images/blog" 
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subheading", name: "subheading", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "cover", widget: "image"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: "false"}
+      - {label: "Guest Author Name", name: "guest_author_name", widget: "string"}
+      - {label: "Guest Author Description", name: "guest_author_desc", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
