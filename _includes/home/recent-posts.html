@@ -1,0 +1,14 @@
+<section class="section-white-bg">
+	<div class="container recent-posts-container">
+		<h2 class="section-title">Recent posts</h2>
+		<div class="row">
+			<!-- show only the latest 3 posts -->
+			{% for post in site.posts limit:3 %}
+				<div class="col-post-card col-lg-4">
+	        {% include blog/post-card-small.html post=post %}
+	      </div>
+			{% endfor %}
+		</div>
+		<a href="/blog" class="link-with-icon">See more blog posts <i class="fas fa-arrow-right"></i></a>
+	</div>
+</section>

@@ -1,0 +1,25 @@
+{% if include.post.guest_author == true %}
+	{% assign author_name = include.post.guest_author_name %}
+	{% assign author_desc = include.post.guest_author_desc %}
+{% else %}
+	{% for author in site.bios %}
+		{% if author.name == include.post.author %}
+			{% assign author_name = author.name %}
+			<!-- Not everyone has a bio -->
+			{% assign author_desc = author.position %}
+			{% assign author_image_url = author.image_url %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+<div class="author-container">
+	{% unless include.post.guest_author == true %}
+		<img class="lazy" src="/assets/images/lazy.jpg" data-src="{{author_image_url}}">
+	{% endunless %}
+	<div class="author-info">
+		<p class="author-name">{{author_name}}</p>
+		{% if include.show_desc == "true" %}
+			<p class="author-desc">{{author_desc }}</p>
+		{% endif %}
+	</div>
+</div>

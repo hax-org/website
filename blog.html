@@ -1,18 +1,24 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 <section class="section-gray-bg">
   <div class="container">
-    <div class="show-md-up">
-      {% include blog/post-card-large.html post=site.posts.first %}
-    </div>
-    <div class="show-md-down">
-      {% include blog/post-card-small.html post=site.posts.first %}
-    </div>
     <div class="row equal">
-      {% for post in site.posts %}
-        <!-- Skip the first post -->
-        {% unless forloop.first %}
+      {% for post in paginator.posts %}
+        <!-- First post on page is shown in a different style (post-card-large) -->
+        {% if forloop.first %}
+          <!-- have to put col-12, since it's in a row -->
+          <div class="col-12">
+            <div class="show-md-up">
+              {% include blog/post-card-large.html post=post %}
+            </div>
+            <div class="show-md-down">
+              {% include blog/post-card-small.html post=post %}
+            </div>
+          </div>
+        {% else %}
           <div class="col-post-card {% cycle
             'col-lg-4 col-md-6',
             'col-lg-4 col-md-6',
@@ -21,8 +27,9 @@ layout: default
             'col-lg-6 col-md-12' %}">
             {% include blog/post-card-small.html post=post %}
           </div>
-        {% endunless %}
+        {% endif %}
       {% endfor %}
     </div>
+    {% include blog/pagination.html %}
   </div>
 </section>

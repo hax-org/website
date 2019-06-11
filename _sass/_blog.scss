@@ -1,3 +1,26 @@
+@import "variables";
+
+/* Pagination */
+
+.pagination-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	color: $purple;
+}
+
+.page-item.active .page-link {
+	background-color: $purple;
+	border-color: $purple;
+}
+
+.page-link {
+	color: $purple;
+	&:hover {
+		color: $purple;
+	}
+}
+
 /* Content Styles*/
 
 .post-content {
@@ -7,7 +30,7 @@
 		margin: 20px 0;
 	}
 
-	.highlighter-rouge {
+	.code-block {
 		background-color: #E9E9E9;
 		padding: 20px 30px;
 		margin: 20px 0;
@@ -27,6 +50,8 @@
 .post-card-small {
 	height: 100%;
 	background-color: white;
+	box-shadow: $boxshadow;
+	@include smooth-transition;
 
 	.image-container {
 		width: 100%;
@@ -46,7 +71,6 @@
 	.post-card-content {
 		padding: 30px;
 		color: black;
-		height: 100%;
 	}
 
 	.post-title {
@@ -54,30 +78,51 @@
 		margin-bottom: 20px;
 	}
 
-	.author-container img {
-		width: 30px;
-		height: 30px;
-		margin-right: 10px;
+	.author-container {
+		margin-top: 20px;
 	}
 
 	&:hover {
+		box-shadow: $boxshadow-hover;
 		.post-image {
 			@include scale-larger-transition;
 		}
 	}
 }
 
+.author-container {
+	display: flex;
+	flex-direction: row;
+	/*padding: 30px;*/
+	/* Author picture */
+
+	.author-name {
+		font-weight: 500;
+		margin-bottom: 0.5rem;
+	}
+
+	img {
+		width: 30px;
+		height: 30px;
+		border-radius: 100px;
+		margin-right: 15px;
+	}
+}
+
 #first-post-container {
 	position: relative;
 	overflow: hidden;
+	box-shadow: $boxshadow;
+	@include smooth-transition;
 
-	img {
+	.cover-image {
 		width: 100%;
 		height: 500px;
+		object-fit: cover;
 		@include smooth-transition;
 	}
 
-	 .post-card-content {
+	.post-card-content {
 	 	position: absolute;
 		bottom: 0;
 		left: 0;
@@ -96,14 +141,19 @@
 	}
 
 	&:hover {
+		box-shadow: $boxshadow-hover;
 		img {
 			@include scale-larger-transition;
 		}
 	}
+
+	.post-author {
+		font-weight: bold;
+	}
 }
 
 .post-tag {
-	color: $bgcolor;
+	color: $purple;
 	font-weight: bold;
 }
 
@@ -142,20 +192,7 @@
 		}
 	}
 }
-.author-container {
-	display: flex;
-	flex-direction: row;
-	/*padding: 30px;*/
-	/* Author picture */
 
-	.author-info {
-		margin-left: 15px;
-	}
-	.author-name {
-		font-weight: 500;
-		margin-bottom: 0.5rem;
-	}
-}
 .col-group {
 	margin-bottom: 30px;
 }
@@ -237,3 +274,10 @@
     }
 }
 
+.prev-next-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 0 40px;
+	font-weight: bold;
+}

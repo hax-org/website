@@ -12,7 +12,9 @@ end
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 	gem "jekyll-feed"
-   gem "hawkins"
+	gem "hawkins"
+	gem 'jekyll-tagging'
+	gem 'jekyll-paginate-v2'
 end
 
 gem "ffi", ">= 1.9.24"

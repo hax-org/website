@@ -1,0 +1,13 @@
+{% if paginator.page_trail %}
+   <nav class="pagination-nav" aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item {% unless paginator.previous_page %}disabled{% endunless %}"><a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a></li>
+      {% for trail in paginator.page_trail %}
+        <li class="page-item {% if page.url == trail.path %}active{% endif %}">
+          <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{trail.num}}</a>
+        </li>
+      {% endfor %}
+      <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}"><a class="page-link" href="{{ paginator.next_page_path }}">Next</a></li>
+    </ul>
+  </nav>
+{% endif %}

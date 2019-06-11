@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="section-default section-gray-bg">
+	<div class="container">
+		<h1 class="page-title title-centered">Posts tagged "{{ page.tag }}"</h1>
+		<div class="row">
+			{% for post in site.tags[page.tag] %}
+				<div class="col-post-card col-lg-4 col-md-6">
+					{% include blog/post-card-small.html post=post %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

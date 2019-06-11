@@ -11,6 +11,12 @@ exclude:
   - Gemfile.lock
 sass:
   style: compressed
+exclude: [parse] # generates bios
+plugins: 
+  - jekyll-paginate-v2
+  - jekyll-feed
+
+# Collections
 collections:
   bios:
     title: Bio
@@ -19,4 +25,19 @@ collections:
     title: Post
     output: true
     permalink: /blog/:year/:month/:day/:title:output_ext
-exclude: [parse]
+
+# Blog pagination
+pagination:
+  enabled: true
+  sort_reverse: true
+  per_page: 11
+  indexpage: 'blog'
+  permalink: /:num/
+  trail: 
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page
+    
+# Jekyll Tags Plugin
+tag_page_layout: tag
+tag_page_dir: tag
+# ignored_tags: [tags,to,ignore]

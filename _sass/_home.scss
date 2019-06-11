@@ -1,18 +1,16 @@
 @import "variables";
 
+.section-title {
+  margin-bottom: 30px;
+}
+
 /* ABOUT */
 
 #about {
   padding-top: 100px;
   padding-bottom: 120px;
-  h2 {
-    margin-bottom: 30px;
-  }
   .about-text {
-    margin-bottom: 40px;
-    @media (min-width: $md) {
-      width: 60%;
-    }
+    margin-bottom: 30px;
   }
 }
 
@@ -64,9 +62,24 @@
   margin-bottom: 30px
 }
 
+/* RECENT POSTS */
+
+.recent-posts-container {
+  .row {
+    margin-bottom: 50px;
+  }
+
+  /* uncomment to center the link */
+  /*display: flex;
+  flex-direction: column;
+  .link-with-icon {
+    text-align: center;
+  }*/
+}
+
 /* QUOTE */
 
-#quote {
+.quote {
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center;
@@ -109,7 +122,7 @@
   font-weight: 400;
 }
 
-/* organizations */
+/* ORGANIZATIONS */
 
 .organizations-text {
   text-align: center;

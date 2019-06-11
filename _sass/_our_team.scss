@@ -40,6 +40,10 @@ $bio-container-padding: 30px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	box-shadow: $boxshadow;
+	&:hover {
+		box-shadow: $boxshadow-hover;
+	}
 	@media (min-width: $md) {
 		flex-direction: row;
 		text-align: left;

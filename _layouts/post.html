@@ -14,31 +14,34 @@ layout: default
 				<div class="post-content">
 					{{ content }}
 				</div>
-				{% include blog/disqus.html %}
+				<div class="prev-next-links">
+					{% if page.previous.url %}
+					    <a class="prev" href="{{page.previous.url}}">← {{page.previous.title}}</a>
+					  {% endif %}
+					  {% if page.next.url %}
+					    <a class="next" href="{{page.next.url}}">{{page.next.title}} →</a>
+					  {% endif %}
+				</div>
+				{% include blog/posts/disqus.html %}
 			</div>
 			<div class="col-lg-4">
 				<div class="right-col">
 					<div class="col-group">
 						<h4 class="col-group-title">Author</h4>
-						<div class="author-container">
-							<img src="/assets/images/prof.png">
-							<div class="author-info">
-								<p class="author-name">{{page.author}}</p>
-								<p class="author-desc">{{page.author_desc}}</p>
-							</div>
-						</div>
+						{% include blog/posts/author-container.html post=page show_desc="true" %}
 					</div>
 					<div class="col-group">
 						<h4 class="col-group-title">Share</h4>
-						{% include blog/share-icons.html %}
+						{% include blog/posts/share-icons.html %}
 						<!-- include an rss feed -->
 					</div>
 					<div class="col-group">
 						<h4 class="col-group-title">Tags</h4>
+						{% include blog/posts/tags.html %}
 					</div>
 					<div class="col-group">
 						<h4 class="col-group-title">Latest Tweets</h4>
-						<a class="twitter-timeline" data-height="1000" data-dnt="true" data-link-color="#6800fa" href="https://twitter.com/HAX_org?ref_src=twsrc%5Etfw">Tweets by HAX_org</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<a class="twitter-timeline" data-tweet-limit="2" data-dnt="true" data-link-color="#6800fa" href="https://twitter.com/HAX_org?ref_src=twsrc%5Etfw">Tweets by HAX_org</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
 				</div>
 			</div>

@@ -9,10 +9,7 @@
         <h3 class="post-title">{{include.post.title}}</h3>
         <p class="post-subheading">{{include.post.subheading}}</p>
       </div>
-      <div class="author-container">
-        <img src="/assets/images/prof.png">
-        <p>{{include.post.author}}</p>
-      </div>
+      {% include blog/posts/author-container.html post=include.post show_desc="false" %}
     </div>
   </a>
 </div>
