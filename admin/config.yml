@@ -12,8 +12,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
+      preview: false # Since it looked weird
+    # All fields default to required unless specified
+    fields: # The front matter for each post
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subheading", name: "subheading", widget: "string"}
@@ -21,7 +22,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "cover", widget: "image"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: "false", required: "false"}
-      - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: "false"}
-      - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: "false"}
+      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: "false", required: false}
+      - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false }
+      - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
