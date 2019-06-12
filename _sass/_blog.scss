@@ -118,7 +118,7 @@
 
 	/* Author picture */
 	img {
-		width: 30px;
+		width: auto;
 		height: 30px;
 		border-radius: 100px;
 		margin-right: 15px;
@@ -203,7 +203,6 @@
 	padding-left: 15px;
 	.author-container {
 		img {
-			width: 75px;
 			height: 75px;
 			/* Looked ugly */
 			/*align-self: center;*/
