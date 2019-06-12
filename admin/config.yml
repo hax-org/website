@@ -22,7 +22,19 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "cover", widget: "image"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: "false", required: false}
+      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: false, required: false}
       - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false }
       - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
+   - label: "Navigation"
+      name: "navigation"
+      file: "_data/navigation.yml"
+      fields:
+        - {
+            label: "Navigation Items",
+            name: "items",
+            widget: "list",
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
+          }

@@ -1,20 +1,7 @@
-<li class="nav-item">
-  <a class="nav-link" href="/">Home</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="/blog/">Blog</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="/about">About</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="/our-team">Team</a>
-</li>
-<div class="hidden-nav">
-	<li class="nav-item">
-	  <a class="nav-link" href="https://bit.ly/HAXapply">Join Us</a>
-	</li>
-</div>
-<li class="nav-item">
-  <a class="nav-link" href="/contact">Contact</a>
-</li>
+{% for link in site.data.navigation.items %}
+	<div class="{% if link.hidden_nav == true %}hidden-nav{% endif %} {% if link.hidden_footer == true %}hidden-footer{% endif %}">
+		<li class="nav-item">
+		  <a class="nav-link" href="{{link.link}}">{{link.name}}</a>
+		</li>
+	</div>
+{% endfor %}
