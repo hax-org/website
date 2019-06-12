@@ -3,7 +3,7 @@ layout: post
 title:  "This is an example post"
 subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo."
 date:   2019-6-3 00:00:00 -0800
-author: "Michael Cao"
+author: "Olivia Chang"
 cover: "/assets/images/about/1.jpg"
 tags: hackathon tech
 ---

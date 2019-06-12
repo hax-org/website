@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 25
 name: Maura McDougall
 position: Member of Content Creation and Management
 description: 

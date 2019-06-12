@@ -4,18 +4,25 @@ var readmore_enabled = false;
 
 function currentWindow() {
 	return window.location.pathname.split('/')[1]
+	// location.href.split('/')[3]
 }
 
 function initJS() {
+	// show which link is current in the nav
 	markNavLinks();
+	// Initialize lazyload
 	lazyLoadInstance = new LazyLoad({});
+	// Add readmore.js
 	addReadmore()
+	// Highlight code syntax
+	hljs.initHighlightingOnLoad();
 }
 
 function markNavLinks() {
+	console.log(currentWindow());
 	// add current
 	$('nav li a').filter(function(){
-	  return this.href === location.href;
+		return this.href === location.href;
 	}).addClass('active');
 	// remove previous
 	$('nav li a').filter(function(){
@@ -24,7 +31,6 @@ function markNavLinks() {
 }
 
 function addReadmore() {
-	console.log('added readmore')
 	$('.readmore').readmore({
 		speed: 100,
 		collapsedHeight: 100,

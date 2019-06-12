@@ -25,20 +25,6 @@ html.is-animating .transition-fade{
     opacity: 0;
 }
 
-* {
-  font-family: $mfont,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-a {
-  color: $purple;
-}
-
-a:hover {
-  text-decoration: none;
-  color: black;
-  transition: .2s all;
-}
-
 button {
   color: white;
   background-color: $purple;
@@ -62,7 +48,7 @@ button {
 
 /* SECTION STYLES */
 
-section {
+.section-default {
   padding: 50px 20px;
 }
 
@@ -90,32 +76,14 @@ section {
   padding: 5% 0;
 }
 
-#page-not-found {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height:50vh;
-
-  button {
-    margin-top: 30px;
-  }
-}
-
+/* Used for making bootstrap columns equal height */
 .equal {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
 }
 
-.page-title {
-  margin-bottom: 50px;
-}
-
-.title-centered {
-  text-align: center;
-}
-
+/* Visibility styles (Boostrap 4 no longer comes with it) */
 .show-md-up {
   display: none;
   @media (min-width: $md) {

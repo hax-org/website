@@ -2,11 +2,14 @@
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="/node_modules/readmore-js/readmore.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
-<script src="/node_modules/swup/dist/swup.min.js"></script>
+<!-- <script src="/node_modules/swup/dist/swup.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+
+<!-- Main.js needs to come last, so that it can access the libraries we've loaded -->
 <script src="/assets/js/main.js"></script>
 
+<!-- Netlify CMS -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

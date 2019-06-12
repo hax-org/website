@@ -1,5 +1,5 @@
 ---
-order: 16
+order: 19
 name: Denise Tran
 position: Member of Web Development
 description: 

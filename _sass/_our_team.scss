@@ -7,15 +7,6 @@ $bio-container-padding: 30px;
 	/*border-bottom: 1px solid #e2e2e2;*/
 }
 
-.stats-container {
-	width: 300px;
-	margin: 30px auto 0;
-}
-
-.stat-container {
-	width: 100px;
-}
-
 .readmore {
   overflow: hidden;
 }
@@ -34,6 +25,7 @@ $bio-container-padding: 30px;
 }
 
 .bio-container {
+	@include smooth-transition;
 	height: 100%;
 	padding: $bio-container-padding;
 	background-color: white;

@@ -1,7 +1,7 @@
 ---
-order: 22
+order: 13
 name: Olivia Chang
-position: Member of Web Development
+position: Sub-Director of Web Development
 description: 
 image_url: /assets/images/bios/Olivia Chang.JPG
 facebook: 

@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 29
 name: Stephanie Yen
 position: Member of Content Creation & Management Teams
 description: 

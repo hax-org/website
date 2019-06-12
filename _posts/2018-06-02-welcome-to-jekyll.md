@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo."
-author: "Elaine Ly"
+author: "Olivia Chang"
 date: 2019-6-2 00:00:00 -0800
 tags: hackathon jekyll
 cover: "/assets/images/about/2.jpg"

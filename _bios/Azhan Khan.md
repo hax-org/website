@@ -1,5 +1,5 @@
 ---
-order: 30
+order: 16
 name: Azhan Khan
 position: Member of Management Team
 description: 

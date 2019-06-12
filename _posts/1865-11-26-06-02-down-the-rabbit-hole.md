@@ -2,7 +2,7 @@
 layout: post
 title:  "Down the Rabbit Hole"
 subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo."
-author: "Denise Tran"
+author: "Olivia Chang"
 date: 1865-11-26 10:18:00
 tags: jekyll update
 cover: "/assets/images/blog/piano.jpg"

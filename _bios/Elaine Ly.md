@@ -1,5 +1,5 @@
 ---
-order: 27
+order: 20
 name: Elaine Ly
 position: Member of Website Design
 description: 

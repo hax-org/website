@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 26
 name: Mehak Garg
 position: Member of Design Team
 description: 
