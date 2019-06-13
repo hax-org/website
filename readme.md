@@ -91,6 +91,7 @@ Save as .html or .md. Refer to the style test post (which is hidden from publish
 author: full name of the author (must EXACTLY match the name under Our Team, case sensitive)
 ```
 **Or if the post is from a guest author**
+Setting `guest_author` to true will supersede anything specified in `author`!
 ```
 guest_author: true
 guest_author_name: Name of the author
