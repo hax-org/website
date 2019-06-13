@@ -13,9 +13,10 @@ Prerequisites:
 git clone https://github.com/hax-org/website.git
 cd website
 bundle install
+yarn
 ```
 
-## Starting the server
+### Starting the server
 ```
 jekyll s
 ```
@@ -65,10 +66,6 @@ That will update the `_bios` folder.
 
 ### Jekyll Plugins
 Currently using `jekyll-feed` to generate RSS feeds, `jekyll-paginate-v2` (the built-in pagination is sad) for pagination, and `jekyll-tagging` for generating tag pages automatically (so we don't have to make a new page for each tag).
-
-### Misc
-* Let's keep third party stuff in node_modules, if possible
-* Try to cut down on long files by using `_includes`
 
 ## Blog
 ### New posts
