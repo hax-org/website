@@ -13,9 +13,10 @@ Prerequisites:
 git clone https://github.com/hax-org/website.git
 cd website
 bundle install
+yarn
 ```
 
-## Starting the server
+### Starting the server
 ```
 jekyll s
 ```
@@ -66,10 +67,6 @@ That will update the `_bios` folder.
 ### Jekyll Plugins
 Currently using `jekyll-feed` to generate RSS feeds, `jekyll-paginate-v2` (the built-in pagination is sad) for pagination, and `jekyll-tagging` for generating tag pages automatically (so we don't have to make a new page for each tag).
 
-### Misc
-* Let's keep third party stuff in node_modules, if possible
-* Try to cut down on long files by using `_includes`
-
 ## Blog
 ### New posts
 ```
@@ -77,9 +74,9 @@ Currently using `jekyll-feed` to generate RSS feeds, `jekyll-paginate-v2` (the b
 layout: post
 title: title of the post
 subheading: short description of the post content
-cover: path to image where the cover image is for the blog (keep blog images at `/assets/images/blog/`)
-date: Jekyll accepts a lot of formats, but the best format is like this: `1863-11-19 10:18:00`
-tags: separate by spaces, e.g. `tag1 tag2 tag3`
+cover: path to image where the cover image is for the blog (keep blog images at "/assets/images/blog/")
+date: Jekyll accepts a lot of formats, but use this format: "1863-11-19 10:18:00"
+tags: separate by spaces, e.g. "tag1 tag2 tag3"
 ---
 post content here
 ```
@@ -91,6 +88,7 @@ Save as .html or .md. Refer to the style test post (which is hidden from publish
 author: full name of the author (must EXACTLY match the name under Our Team, case sensitive)
 ```
 **Or if the post is from a guest author**
+Setting `guest_author` to true will supersede anything specified in `author`!
 ```
 guest_author: true
 guest_author_name: Name of the author
@@ -98,7 +96,7 @@ guest_author_desc: Author desc
 ```
 
 ### Netlify CMS - for non-technical people to add posts.
-The CMS is configured in `admin/config.yml`. Access the cms at haxorg.io/admin.
+The CMS is configured in `admin/config.yml`. Access the cms at https://haxorg.io/admin.
 
 ## Deployment
 The site is hosted on Netlify, with CI. Any changes to the `master` branch on Github will automatically show up on the website. Changes to the staging branch will show up at https://staging--haxorg.netlify.com.
