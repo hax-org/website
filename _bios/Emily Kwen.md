@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 22
 name: Emily Kwen
 position: Member of Social Media Team, Member of Design Team
 description: 

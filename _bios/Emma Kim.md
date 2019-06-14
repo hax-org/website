@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 23
 name: Emma Kim
 position: Member of Design and Social Media
 description: 

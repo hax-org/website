@@ -1,5 +1,5 @@
 ---
-order: 24
+order: 25
 name: Lucas Chu
 position: Member of outreach, content creation, and design
 description: 
