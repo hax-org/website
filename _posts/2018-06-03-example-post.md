@@ -4,7 +4,7 @@ title:  "This is an example post"
 subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo."
 date:   2019-6-3 00:00:00 -0800
 author: "Olivia Chang"
-cover: "/assets/images/about/1.jpg"
+cover: "/assets/images/cms_uploads/1.jpg"
 tags: hackathon tech
 ---
 This page is a demo that shows everything you can do inside blog posts.

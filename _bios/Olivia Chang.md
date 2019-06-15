@@ -3,7 +3,7 @@ order: 15
 name: Olivia Chang
 position: Sub-Director of Web Development
 description: 
-image_url: /assets/images/bios/Olivia Chang.JPG
+image_url: /assets/images/cms_uploads/Olivia Chang.JPG
 facebook: 
 twitter: 
 website: https://www.oliviachang.me/

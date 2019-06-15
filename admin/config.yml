@@ -1,40 +1,34 @@
 backend:
   name: git-gateway
-  branch: staging # Branch to update
+  branch: master # Branch to update
+  squash_merges: true
 publish_mode: editorial_workflow
-media_folder: "/assets/images/blog" 
+media_folder: "/assets/images/cms_uploads" 
+site_url: https://haxorg.io
+display_url: https://haxorg.io
 logo_url: https://haxorg.io/assets/images/haxlogo1.png
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    preview_path: "blog/{{year}}/{{month}}/{{slug}}"
+  - name: "bios"
+    label: "Bios"
+    description: "List of all of our team members in the Our Team page"
+    folder: "_bios"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "our-team"
     editor:
-      preview: false # Since it looked weird
-    # All fields default to required unless specified
-    fields: # The front matter for each post
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subheading", name: "subheading", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "cover", widget: "image"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: false, required: false}
-      - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false }
-      - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false }
-      - {label: "Body", name: "body", widget: "markdown"}
-   - label: "Navigation"
-      name: "navigation"
-      file: "_data/navigation.yml"
-      fields:
-        - {
-            label: "Navigation Items",
-            name: "items",
-            widget: "list",
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Link, name: link, widget: string}
-          }
+      preview: false
+    fields:
+      - {label: "Name", name: "name", widget: "string", hint: "Your full name"}
+      - {label: "Position", name: "position", widget: "string", hint: "e.g. Director of Outreach, member of design team, etc."}
+      - {label: "Description - directors only", name: "description", widget: "text", required: false, hint: "DIRECTORS ONLY: 3-5 sentence bio about yourself and your interests"}
+      - {label: "Profile Picture", name: "image_url", widget: "image", hint: "Upload a SQUARE image of yourself"}
+      - {label: "Email", name: "email", widget: "string", required: false, hint: "Just include an email. No need to include a mailto at the front."}
+      - {label: "Instagram URL", name: "instagram", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Website URL", name: "website", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Facebook URL", name: "facebook", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Twitter URL", name: "twitter", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Youtube URL", name: "youtube", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Github URL", name: "github", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Discord URL", name: "discord", widget: "string", required: false, hint: "Links, not usernames"}
+      - {label: "Snapchat URL", name: "snapchat", widget: "string", required: false, hint: "Links, not usernames"}

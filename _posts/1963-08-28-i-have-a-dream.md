@@ -6,7 +6,7 @@ date: 1963-08-28 10:18:00
 guest_author: true
 guest_author_name: "Guest Author"
 guest_author_desc: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-cover: "/assets/images/about/3.jpg"
+cover: "/assets/images/cms_uploads/3.jpg"
 tags: hackathon tech
 ---
 
