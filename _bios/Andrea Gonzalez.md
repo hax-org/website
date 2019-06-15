@@ -3,7 +3,7 @@ order: 14
 name: Andrea Gonzalez
 position: Member of Outreach team, member of social media team
 description: 
-image_url: /assets/images/bios/Andrea Gonzalez.jpeg
+image_url: /assets/images/cms_uploads/Andrea Gonzalez.jpeg
 facebook: 
 twitter: 
 website: 

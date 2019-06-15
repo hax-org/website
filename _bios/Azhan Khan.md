@@ -3,7 +3,7 @@ order: 16
 name: Azhan Khan
 position: Member of Management Team
 description: 
-image_url: /assets/images/bios/Azhan Khan.jpeg
+image_url: /assets/images/cms_uploads/Azhan Khan.jpeg
 facebook: 
 twitter: 
 website: 

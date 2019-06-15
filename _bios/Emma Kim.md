@@ -3,7 +3,7 @@ order: 22
 name: Emma Kim
 position: Member of Design and Social Media
 description: 
-image_url: /assets/images/bios/Emma Kim.jpeg
+image_url: /assets/images/cms_uploads/Emma Kim.jpeg
 facebook: 
 twitter: 
 website: 

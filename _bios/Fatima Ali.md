@@ -3,7 +3,7 @@ order: 23
 name: Fatima Ali
 position: Member of Design and Social Media Teams
 description: 
-image_url: /assets/images/bios/Fatima Ali.jpg
+image_url: /assets/images/cms_uploads/Fatima Ali.jpg
 facebook: 
 twitter: 
 website: 

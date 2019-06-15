@@ -3,7 +3,7 @@ order: 20
 name: Elaine Ly
 position: Member of Website Design
 description: 
-image_url: /assets/images/bios/Elaine Ly.jpg
+image_url: /assets/images/cms_uploads/Elaine Ly.jpg
 facebook: 
 twitter: 
 website: 
