@@ -32,12 +32,13 @@ collections:
       - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false, hint: "Short description (1-2 sentences) of the guest author." }
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "bios"
-    label: "Bios"
+    label: "Bio"
     description: "List of all of our team members in the Our Team page"
     folder: "_bios"
     create: true
     slug: "{{slug}}"
     preview_path: "our-team"
+    identifier_field: "name"
     editor:
       preview: false
     fields:
