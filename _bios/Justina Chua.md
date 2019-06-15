@@ -8,7 +8,7 @@ facebook:
 twitter: 
 website: 
 youtube: 
-email: http://justinaachuaa@gmail.com
+email: justinaachuaa@gmail.com
 github: 
 discord: 
 instagram: https://instagram.com/justinaachuaa

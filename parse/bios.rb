@@ -53,7 +53,7 @@ CSV.parse(File.readlines('data.csv').drop(2).join) do |row|
 	temp_person["twitter"] = formatLink(row[7])
 	temp_person["website"] = formatLink(row[8])
 	temp_person["youtube"] = formatLink(row[9])
-	temp_person["email"] = formatLink(row[10])
+	temp_person["email"] = row[10]
 	temp_person["github"] = formatLink(row[11])
 	temp_person["discord"] = formatLink(row[12])
 	temp_person["instagram"] = formatLink(row[13])

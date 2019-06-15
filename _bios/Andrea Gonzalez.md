@@ -8,7 +8,7 @@ facebook:
 twitter: 
 website: 
 youtube: 
-email: http://andrea.gonz0012@gmail.com
+email: andrea.gonz0012@gmail.com
 github: 
 discord: 
 instagram: https://www.instagram.com/a.ndreagonzalez/

@@ -8,7 +8,7 @@ facebook:
 twitter: 
 website: 
 youtube: 
-email: http://elainely2003@gmail.com
+email: elainely2003@gmail.com
 github: https://github.com/elainely21
 discord: 
 instagram: https://www.instagram.com/elaikenly/

@@ -7,11 +7,11 @@ image_url: /assets/images/bios/Forrest Leung.jpg
 facebook: 
 twitter: 
 website: 
-youtube: http://fleung48@gmail.com
-email: 
+youtube: 
+email: fleung48@gmail.com
 github: 
-discord: http://instagram.com/fleung48
-instagram: http://linkedin.com/in/fleung48
-linkedin: 
+discord: 
+instagram: http://instagram.com/fleung48
+linkedin: http://linkedin.com/in/fleung48
 snapchat: 
 ---

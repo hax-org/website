@@ -8,7 +8,7 @@ facebook:
 twitter: 
 website: 
 youtube: 
-email: http://lucaschu@college.harvard.edu
+email: lucaschu@college.harvard.edu
 github: 
 discord: 
 instagram: 

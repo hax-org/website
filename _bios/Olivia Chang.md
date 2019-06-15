@@ -8,7 +8,7 @@ facebook:
 twitter: 
 website: https://www.oliviachang.me/
 youtube: 
-email: http://hello@oliviachang.me
+email: hello@oliviachang.me
 github: https://github.com/oliviachang29
 discord: 
 instagram: 
