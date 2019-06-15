@@ -33,7 +33,7 @@ end
 
 def imageUrl(image_url)
 	unless image_url.nil?
-		return "/assets/images/bios/#{image_url}"
+		return "/assets/images/cms_uploads/#{image_url}"
 	else
 		return nil
 	end 

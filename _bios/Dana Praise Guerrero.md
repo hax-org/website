@@ -3,7 +3,7 @@ order: 18
 name: Dana Praise Guerrero
 position: Member of Design, Social Media and Global Team
 description: 
-image_url: /assets/images/bios/Dana Praise Guerrero.jpeg
+image_url: /assets/images/cms_uploads/Dana Praise Guerrero.jpeg
 facebook: http://facebook.com/danapraiseg
 twitter: http://twitter.com/danapraise
 website: 

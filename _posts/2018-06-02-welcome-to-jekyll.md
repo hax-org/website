@@ -5,7 +5,7 @@ subheading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 author: "Olivia Chang"
 date: 2019-6-2 00:00:00 -0800
 tags: hackathon jekyll
-cover: "/assets/images/about/2.jpg"
+cover: "/assets/images/cms_uploads/2.jpg"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

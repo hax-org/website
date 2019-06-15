@@ -3,7 +3,7 @@ order: 24
 name: Lucas Chu
 position: Member of outreach, content creation, and design
 description: 
-image_url: /assets/images/bios/Lucas Chu.jpg
+image_url: /assets/images/cms_uploads/Lucas Chu.jpg
 facebook: 
 twitter: 
 website: 
