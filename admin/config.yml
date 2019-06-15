@@ -26,3 +26,25 @@ collections:
       - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false }
       - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "bios"
+    label: "Bios"
+    folder: "_bios"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Profile Picture", name: "image_url", widget: "image"}
+      - {label: "Facebook URL", name: "facebook", widget: "string", required: false}
+      - {label: "Twitter URL", name: "twitter", widget: "string", required: false}
+      - {label: "Website URL", name: "website", widget: "string", required: false}
+      - {label: "Youtube URL", name: "youtube", widget: "string", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "Github URL", name: "github", widget: "string", required: false}
+      - {label: "Discord URL", name: "discord", widget: "string", required: false}
+      - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+      - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
+      - {label: "Snapchat URL", name: "snapchat", widget: "string", required: false}
