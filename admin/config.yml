@@ -42,6 +42,7 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Order", name: "order", widget: "hidden", default: "100"} # so it gets put at the end, not the beginning
       - {label: "Name", name: "name", widget: "string", hint: "Your full name"}
       - {label: "Position", name: "position", widget: "string", hint: "e.g. Director of Outreach, member of design team, etc."}
       - {label: "Description - directors only", name: "description", widget: "text", required: false, hint: "DIRECTORS ONLY: 3-5 sentence bio about yourself and your interests"}
