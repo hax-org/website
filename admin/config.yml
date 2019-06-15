@@ -3,19 +3,19 @@ backend:
   branch: staging # Branch to update
   squash_merges: true
 publish_mode: editorial_workflow
-media_folder: "/assets/images" 
+media_folder: "/assets/images/cms_uploads" 
 site_url: https://haxorg.io
 display_url: https://haxorg.io
 logo_url: https://haxorg.io/assets/images/haxlogo1.png
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
-    description: "Blog posts."
+    description: "Blog posts"
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: "blog/{{year}}/{{month}}/{{day}}/{{title}}"
-    summary: "{{title}} \n {{subheading}}"
+    summary: "{{title}}"
     editor:
       preview: false # Since it looked weird
     # All fields default to required unless specified
@@ -33,7 +33,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "bios"
     label: "Bios"
-    description: "Bios in the Our Team page."
+    description: "List of all of our team members in the Our Team page"
     folder: "_bios"
     create: true
     slug: "{{slug}}"
