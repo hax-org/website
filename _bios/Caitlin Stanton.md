@@ -1,5 +1,5 @@
 ---
-order: 18
+order: 19
 name: Caitlin Stanton
 position: Member of the Management and Content Creation Teams
 description: 

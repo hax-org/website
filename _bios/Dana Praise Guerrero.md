@@ -1,5 +1,5 @@
 ---
-order: 19
+order: 20
 name: Dana Praise Guerrero
 position: Member of Design, Social Media and Global Team
 description: 

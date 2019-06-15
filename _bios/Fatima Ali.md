@@ -1,5 +1,5 @@
 ---
-order: 24
+order: 25
 name: Fatima Ali
 position: Member of Design and Social Media Teams
 description: 
