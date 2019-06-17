@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 4
 name: Caroline Choi
 position: Sub-Director of Web Development
 description: 

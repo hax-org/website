@@ -74,12 +74,26 @@ All of the styling goes in the `_sass` folder. Each time you create a new .scss 
 ```
 
 ### Generating bios
-Don't edit the `_bios` folder directly! Any changes will be overwritten when the parse program is run. Instead, download csv for *formatted* form responses (should be in the HAX Team Drive) and update `data.csv` with the new csv you just downloaded.
+We can now edit the `_bios` directly! You can use the CMS (see below) to edit, or you can follow this format:
 ```
-cd parse
-ruby bios.rb
+---
+order: 1 is Justina, 2 is Michael, 3 is directors, 4 is sub-directors, 5 is everyone else
+name:
+position:
+description:
+image_url:
+facebook:
+twitter:
+website:
+youtube:
+email:
+github:
+discord:
+instagram:
+linkedin:
+snapchat:
+---
 ```
-That will update the `_bios` folder.
 
 ### Jekyll Plugins
 Currently using `jekyll-feed` to generate RSS feeds, `jekyll-paginate-v2` (the built-in pagination is sad) for pagination, and `jekyll-tagging` for generating tag pages automatically (so we don't have to make a new page for each tag).

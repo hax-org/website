@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 5
 name: Tala Germani
 position: 'Member of Outreach, Management, and Design'
 image_url: /assets/images/cms_uploads/screen-shot-2019-06-16-at-6.55.46-pm.png

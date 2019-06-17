@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 5
 name: Denise Tran
 position: Member of Web Development
 description: 

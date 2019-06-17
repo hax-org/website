@@ -1,5 +1,5 @@
 ---
-order: 30
+order: 5
 name: Sneha Pullanoor
 position: Member of Content Creation and Management
 description: 

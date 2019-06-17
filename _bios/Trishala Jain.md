@@ -1,5 +1,5 @@
 ---
-order: 32
+order: 5
 name: Trishala Jain
 position: Member of Outreach and Management
 description: 

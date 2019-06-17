@@ -1,7 +1,7 @@
 ---
-order: 25
+order: 5
 name: Fatima Ali
-position: Member of Design and Social Media Teams
+position: Member of Design and Social Media
 description: 
 image_url: /assets/images/cms_uploads/Fatima Ali.jpg
 facebook: 

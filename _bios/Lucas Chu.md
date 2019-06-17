@@ -1,7 +1,7 @@
 ---
-order: 26
+order: 5
 name: Lucas Chu
-position: Member of outreach, content creation, and design
+position: Member of Outreach, Content Creation, and Design
 description: 
 image_url: /assets/images/cms_uploads/Lucas Chu.jpg
 facebook: 

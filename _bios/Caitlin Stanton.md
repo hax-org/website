@@ -1,7 +1,7 @@
 ---
-order: 19
+order: 5
 name: Caitlin Stanton
-position: Member of the Management and Content Creation Teams
+position: Member of Management and Content Creation
 description: 
 image_url: /assets/images/cms_uploads/Caitlin Stanton.jpg
 facebook: 

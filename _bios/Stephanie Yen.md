@@ -1,7 +1,7 @@
 ---
-order: 31
+order: 5
 name: Stephanie Yen
-position: Member of Content Creation & Management Teams
+position: Member of Content Creation and Management
 description: 
 image_url: /assets/images/cms_uploads/Stephanie Yen.JPG
 facebook: 

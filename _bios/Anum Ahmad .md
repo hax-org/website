@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 5
 name: Anum Ahmad 
 position: Member of Design, Management, and Outreach
 description: 

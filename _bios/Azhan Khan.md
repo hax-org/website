@@ -1,7 +1,7 @@
 ---
-order: 18
+order: 5
 name: Azhan Khan
-position: Member of Management Team
+position: Member of Management
 description: 
 image_url: /assets/images/cms_uploads/Azhan Khan.jpeg
 facebook: 

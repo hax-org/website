@@ -1,7 +1,7 @@
 ---
-order: 29
+order: 5
 name: Shivali Gulati
-position: Member of Content Creation Team
+position: Member of Content Creation
 description: 
 image_url: /assets/images/cms_uploads/Shivali Gulati.jpg
 facebook: 

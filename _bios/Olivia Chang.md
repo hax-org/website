@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 4
 name: Olivia Chang
 position: Sub-Director of Web Development
 description: 

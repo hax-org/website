@@ -1,7 +1,7 @@
 ---
-order: 22
+order: 5
 name: Elaine Ly
-position: Member of Website Design
+position: Member of Web Development
 description: 
 image_url: /assets/images/cms_uploads/Elaine Ly.jpg
 facebook: 
