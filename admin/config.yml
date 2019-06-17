@@ -10,7 +10,7 @@ logo_url: https://haxorg.io/assets/images/haxlogo1.png
 collections:
   - name: "bios"
     label: "Bio"
-    description: "List of all of our team members in the Our Team page"
+    description: "List of all of our team members in the Our Team page. New bios must be approved by the website team."
     folder: "_bios"
     create: true
     slug: "{{slug}}"
@@ -21,7 +21,7 @@ collections:
     fields:
       - {label: "Order", name: "order", widget: "hidden", default: 100} # so it gets put at the end, not the beginning
       - {label: "Name", name: "name", widget: "string", hint: "Your full name"}
-      - {label: "Position", name: "position", widget: "string", hint: "e.g. Director of Outreach, member of design team, etc."}
+      - {label: "Position", name: "position", widget: "string", hint: "Your position, in title case. e.g. Director of Outreach; Member of Design and Content Creation, etc."}
       - {label: "Description - directors only", name: "description", widget: "text", required: false, hint: "DIRECTORS ONLY: 3-5 sentence bio about yourself and your interests"}
       - {label: "Profile Picture", name: "image_url", widget: "image", hint: "Upload a SQUARE image of yourself"}
       - {label: "Email", name: "email", widget: "string", required: false, hint: "Just include an email. No need to include a mailto at the front."}

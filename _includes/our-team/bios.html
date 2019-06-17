@@ -5,7 +5,7 @@
 			<div class="bio-container">
 				{% if person.image_url and person.image_url != "" and person.image_url != nil %}
 					<div class="bio-image-container">
-						<img class="bio-image" src="{{person.image_url}}">
+						<img class="lazy bio-image" src="/assets/images/lazy.jpg" data-src="{{person.image_url}}">
 					</div>
 				{% endif %}
 				<div class="bio-content">
