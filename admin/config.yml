@@ -19,7 +19,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Order", name: "order", widget: "hidden", default: 100} # so it gets put at the end, not the beginning
+      - {label: "Order", name: "order", widget: "hidden", default: 5} # people are generally not directors? web team will manually edit if they are
       - {label: "Name", name: "name", widget: "string", hint: "Your full name"}
       - {label: "Position", name: "position", widget: "string", hint: "In title case. e.g. Director of X; Member of X; Member of X and Y; Member of X, Y, and Z"}
       - {label: "Description - directors only", name: "description", widget: "text", required: false, hint: "DIRECTORS ONLY: 3-5 sentence bio about yourself and your interests"}
