@@ -10,10 +10,10 @@ logo_url: https://haxorg.io/assets/images/haxlogo1.png
 collections:
   - name: "bios"
     label: "Bio"
-    description: "List of all of our team members in the Our Team page. New bios must be approved by the website team."
+    description: "List of all of our team members in the Our Team page. Bios are sorted by position (director vs. member) and then alphabetically. New bios must be approved by the website team."
     folder: "_bios"
     create: true
-    slug: "{{name}}"
+    slug: "{{slug}}"
     preview_path: "our-team"
     identifier_field: "name"
     editor:
