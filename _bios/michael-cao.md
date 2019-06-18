@@ -11,8 +11,12 @@ description: >-
   computer science. He also enjoys surfing the web, reading, and chatting with
   his friends on Discord. 
 image_url: /assets/images/cms_uploads/Michael Cao.png
+email: michael@mikecao.me
 instagram: 'https://instagram.com/mikexcao'
-facebook: 'https://facebook.com/mikexcao'
+linkedin: 'https://linkedin.com/in/michaelcao18/'
+website: 'https://mikecao.me'
+facebook: ''
 twitter: 'https://twitter.com/mikexcao'
+github: 'https://github.com/mcao'
 ---
 
