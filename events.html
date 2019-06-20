@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% capture today_date %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign events = site.events | sort: 'date' %}
+
+{% for event in events %}
+	<!-- get the event date, in unix format (so we can compare it to today's date) -->
+	{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+	
+	<!-- there are events in the future -->
+	{% if event_date > today_date %}
+		{% assign upcoming_events_exist = true %}
+	{% endif %}
+
+	<!-- there are events in the past -->
+	{% if event_date < today_date %}
+		{% assign past_events_exist = true %}
+	{% endif %}
+{% endfor %}
+
+{% if upcoming_events_exist %}
+	<section class="section-default section-gray-bg">
+		<div class="container">
+			<h1 class="title-centered">Upcoming Events</h1>
+			<p class="events-desc">Maybe include a short description of HAX events or something.
+			<div class="row">
+				{% for event in events %}
+					<!-- get the event date, in unix format (so we can compare it to today's date) -->
+					{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+					<!-- if it's in the future -->
+					{% if event_date > today_date %}
+						<!-- then include it, passing event to the partial -->
+						{% include events/event.html event=event %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</p>
+	</section>
+{% endif %}
+
+{% if past_events_exist %}
+	<section class="section-default {% if upcoming_events_exist %}section-white-bg{% else %}section-gray-bg{% endif %}">
+		<div class="container">
+			<h1 class="page-title title-centered">Past Events</h1>
+			<div class="row">
+				{% for event in events %}
+					<!-- get the event date, in unix format (so we can compare it to today's date) -->
+					{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+					<!-- if it's in the future -->
+					{% if event_date < today_date %}
+						<!-- then include it, passing event to the partial -->
+						{% include events/event.html event=event %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endif %}
+
+<section class="section-default section-gray-bg">
+	<div class="mailing-list-container">
+		<h3>Want to hear when more events are added?</h3>
+		<p>Sign up for our mailing list to get news of all things HAX.</p>
+		{% include mailing-list-form.html %}
+	</div>
+</section>

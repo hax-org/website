@@ -1,0 +1,16 @@
+<div class="col-md-6 col-lg-4">
+	<a href="{{include.event.website_url}}" target="_blank">
+		<div class="event-container">
+			<div class="image-container">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="{{include.event.cover}}">
+			</div>
+			<div class="event-content">
+				<h3>{{ include.event.title }}</h3>
+				<div class="event-date-n-location">
+					<p>{{ include.event.date | date_to_string}}</p>
+					<p>{{ include.event.location }}</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

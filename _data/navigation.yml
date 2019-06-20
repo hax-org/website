@@ -4,6 +4,8 @@ items:
     link: /
   - name: Blog
     link: /blog/
+  - name: Events
+    link: /events
   - name: About
     link: /about
   - name: Our Team

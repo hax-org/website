@@ -57,3 +57,18 @@ collections:
       - {label: "Github URL", name: "github", widget: "string", required: false, hint: "Links, not usernames"}
       - {label: "Discord URL", name: "discord", widget: "string", required: false, hint: "Links, not usernames"}
       - {label: "Snapchat URL", name: "snapchat", widget: "string", required: false, hint: "Links, not usernames"}
+  - name: "events"
+    label: "Event"
+    description: "A list of HAX-affiliated events, upcoming and past."
+    folder: "_events"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "events"
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Name of the event."}
+      - {label: "Date", name: "date", widget: "date", hint: "If you set the date in the future, the event will appear as upcoming, and if you set it in the past, it'll appear under past events."}
+      - {label: "Location", name: "location", widget: "string", hint: "For places in the US: City, State; For places outside the US: City, Country"}
+      - {label: "Cover", name: "cover", widget: "image", hint: "Upload an image. On the site, the image appears as 250px in height, while the width varies with the screen size."}
+      - {label: "Website URL", name: "website_url", widget: "string", hint: "Link to main website of the event."}

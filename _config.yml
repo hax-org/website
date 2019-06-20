@@ -25,6 +25,9 @@ collections:
     title: Post
     output: true
     permalink: /blog/:year/:month/:day/:title:output_ext
+  events:
+    title: Event
+    output: false
 
 # Blog pagination
 pagination:
