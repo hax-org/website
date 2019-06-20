@@ -15,3 +15,16 @@ title: Our Team
 	</div>
 </section>
 <script src="/node_modules/readmore-js/readmore.min.js"></script>
+<script>
+	$('.readmore').readmore({
+		speed: 100,
+		collapsedHeight: 100,
+		moreLink: '<a class="readmore-link">Read more</a>',
+		lessLink: '<a class="readmore-link">Read less</a>',
+		afterToggle: function(trigger, element, expanded) {
+			if(! expanded) { // The "Close" link was clicked
+			  $('html, body').animate({scrollTop: element.offset().top}, {duration: 100});
+			}
+		}
+	});
+</script>

@@ -1,3 +1,55 @@
+/* SECTION STYLES */
+
+.section-default {
+  padding: 50px 20px;
+}
+
+.section-white-bg {
+  background-color: white;
+}
+
+.section-purple-bg {
+  background-color: $purple;
+}
+
+.section-color-bg {
+  background-color: $bgcolor; 
+}
+
+.section-color2-bg {
+  background-color: #FFF2F2;
+}
+
+.section-gray-bg {
+  background-color: #F9F9FA;
+}
+
+.section-large-padding {
+  padding: 5% 0;
+}
+
+/* Used for making bootstrap columns equal height */
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+/* Visibility styles (Boostrap 4 no longer comes with it) */
+.show-md-up {
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+  }
+}
+
+.show-md-down {
+  display: block;
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
 #page-not-found {
   display: flex;
   flex-direction: column;
