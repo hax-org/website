@@ -1,7 +1,7 @@
 ---
 order: 2
 name: Michael Cao
-position: Assistant Executive Director
+position: Co-Executive Director
 description: >-
   Michael Cao is a sophomore at Penn State University and an advocate for
   computer science education. His duties in HAX include overseeing all internal
