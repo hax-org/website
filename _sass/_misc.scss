@@ -1,3 +1,5 @@
+@import "variables";
+
 #page-not-found {
   display: flex;
   flex-direction: column;
@@ -8,4 +10,21 @@
   button {
     margin-top: 30px;
   }
+}
+
+#get-involved {
+	.title-centered {
+		/*margin-bottom: 50px;*/
+	}
+	.involvement-option {
+		margin-bottom: 60px;
+		text-align: center;
+		h2 {
+			margin-bottom: 20px;
+		}
+		button {
+			margin-top: 10px;
+			width: 50%;
+		}
+	}
 }

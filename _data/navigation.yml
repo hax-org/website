@@ -6,8 +6,7 @@ items:
     link: /about
   - name: Our Team
     link: /our-team
-  - name: Join Us
-    link: https://bit.ly/HAXapply
-    hidden_nav: true
+  - name: Get Involved
+    link: /get-involved
   - name: Contact
     link: /contact
