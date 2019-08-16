@@ -2,16 +2,9 @@
 order: 4
 name: Olivia Chang
 position: Sub-Director of Web Development
-description: 
 image_url: /assets/images/cms_uploads/Olivia Chang.JPG
-facebook: 
-twitter: 
-website: https://www.oliviachang.me/
-youtube: 
 email: hello@oliviachang.me
-github: https://github.com/oliviachang29
-discord: 
-instagram: 
-linkedin: https://www.linkedin.com/in/oliviazyc/
-snapchat: 
+linkedin: 'https://www.linkedin.com/in/oliviazyc/'
+website: 'https://oliviachang.me'
+github: 'https://github.com/oliviachang29'
 ---
