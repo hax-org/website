@@ -2,7 +2,7 @@
 order: 2
 name: Michael Cao
 position: Co-Executive Director
-description: oops
+description: ''
 image_url: /assets/images/cms_uploads/Michael Cao.png
 email: michael@mikecao.me
 instagram: 'https://instagram.com/mikexcao'
