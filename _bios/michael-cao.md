@@ -1,7 +1,7 @@
 ---
 order: 2
 name: Michael Cao
-position: Co-Executive Director
+position: i smell like feet
 description: srsly get better authentication lol
 image_url: /assets/images/cms_uploads/Michael Cao.png
 email: michael@mikecao.me
