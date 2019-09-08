@@ -1,0 +1,75 @@
+---
+layout: default
+title: Mentee Signup Form
+permalink: '/mentee'
+---
+<section class="section-white-bg section-large-padding">
+  <div class="container">
+    <div class="title-container">
+      <h1 class="title-centered">HAX Mentee Interest Form</h1>
+      <p>HAX is an up-and-coming, student-run nonprofit making computer science education more accessible through hackathons and workshops. Through one-on-one mentorship and detailed guides, we make the process of organizing a hackathon easy and simple. We’re working with over 15 hackathons in three countries and are proudly partnered with Girls Who Code, #BUILTBYGIRLS, TILE, and Crowdera.</p>
+      <p>Interested in starting a hackathon, workshop, or event? Fill out this interest form, and we’ll get back to you shortly.</p>
+    </div>
+  </div>
+</section>
+<section class="section-default section-gray-bg">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <form
+        id="mentee-form"
+        name="mentee"
+        method="POST"
+        action="/mentee-success.html"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        >
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" name="email" class="form-control" placeholder="Enter your email address" required />
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" placeholder="Enter your first and last name" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" name="location" placeholder="[City, State], or [City, Country] if you're not in the US!" required />
+        </div>
+        <div class="form-group">
+          <label for="organization">What school or organization are you representing, if any?</label>
+          <input type="text" class="form-control" name="organization" required />
+        </div>
+        <div class="form-group">
+          <label for="event-type">What are you interested in organizing?</label>
+          <div class="radio">
+            <input type="radio" name="event-type" required><label>Hackathon</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="event-type" required><label>Workshop</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="event-type" required><label>Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="expected-date">When are you hosting your event?</label>
+          <input type="text" class="form-control" name="expected-date" placeholder="Give us a rough estimate. If unsure, write 'unsure'." required />
+        </div>
+        <div class="form-group">
+          <label for="expected-attendee-count">How many attendees are you expecting?</label>
+          <input type="text" class="form-control" name="expected-attendee-count" placeholder="Please provide an estimate or range" required />
+        </div>
+        <div class="form-group">
+          <label for="hax-referral">Where did you hear about HAX?</label>
+          <input type="text" class="form-control" name="hax-referral" placeholder="We'd love to hear!"
+          />
+        </div>
+        <!-- Netlify automatically adds Captcha -->
+        <div data-netlify-recaptcha="true"></div>
+        <!-- Hidden field - bots will fill it out, and Netlify filters them out -->
+        <div class="honeypot"><input name="bot-field" /></div>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
