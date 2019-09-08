@@ -1,0 +1,17 @@
+---
+order: 5
+name: Andrea Gonzalez
+position: Member of Outreach and Social Media
+description: 
+image_url: /assets/images/cms_uploads/Andrea Gonzalez.jpeg
+facebook: 
+twitter: 
+website: 
+youtube: 
+email: andrea.gonz0012@gmail.com
+github: 
+discord: 
+instagram: https://www.instagram.com/a.ndreagonzalez/
+linkedin: http://linkedin.com/in/andrea-gonzalez-7b198b183
+snapchat: https://www.snapchat.com/add/axdreaxx
+---

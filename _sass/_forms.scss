@@ -1,0 +1,17 @@
+.submit-button {
+	margin-top: 30px;
+	width: 100%;
+}
+
+/* Hide the honeypot field from users */
+.honeypot {
+	display: none;
+}
+
+label {
+	font-weight: 500
+}
+
+.radio label {
+	margin-left: 10px;
+}

@@ -42,16 +42,19 @@ $bio-container-padding: 30px;
 	}
 }
 
-.bio-image {
+.bio-image-container {
+	object-fit: cover;
 	margin: 0 auto 20px;
-	width: 75px;
-	height: 75px;
-	border-radius: 75px;
-
 	@media (min-width: $md) {
 		width: auto;
 		margin-right: $bio-container-padding;
 	}
+}
+
+.bio-image {
+	border-radius: 1000px;
+	width: 75px;
+	height: 75px;
 }
 
 .bio-content {
