@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update
+  branch: staging # Branch to update
   squash_merges: true
 publish_mode: editorial_workflow
 media_folder: "/assets/images/cms_uploads" 
@@ -49,3 +49,26 @@ collections:
       - {label: "Location", name: "location", widget: "string", hint: "For places in the US: City, State; For places outside the US: City, Country"}
       - {label: "Cover", name: "cover", widget: "image", hint: "Upload an image. On the site, the image appears as 250px in height, while the width varies with the screen size."}
       - {label: "Website URL", name: "website_url", widget: "string", hint: "Link to main website of the event."}
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    description: "Blog posts"
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: "blog/{{year}}/{{month}}/{{day}}/{{title}}"
+    summary: "{{title}}"
+    editor:
+      preview: false # Since it looked weird
+    # All fields default to required unless specified
+    fields: # The front matter for each post
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title of the post."}
+      - {label: "Subheading", name: "subheading", widget: "text", hint: "Short description (1-2 sentences) of the post content. Appears underneath the title."}
+      - {label: "Tags", name: "tags", widget: "string", hint: "Keywords which are associated with the post. Separate with spaces."}
+      - {label: "Publish Date", name: "date", widget: "date", hint: "If you set the date in the future, the post will only appear on the site on that date."}
+      - {label: "Featured Image", name: "cover", widget: "image", hint: "Appears in the thumbnail and also the top of the post page."}
+      - {label: "HAX Author", name: "author", widget: "string", hint: "Full name of the author only if the author is a member of HAX. Must exactly match the name under Our Team, case sensitive."}
+      - {label: "Guest Author", name: "guest_author", widget: "boolean", default: false, required: false, hint: "Enable only if the post is by a guest author. If this is enabled and a HAX author is specified, this will supersede the HAX author."}
+      - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false , hint: "Name of the guest author."}
+      - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false, hint: "Short description (1-2 sentences) of the guest author." }
+      - {label: "Body", name: "body", widget: "markdown"}
