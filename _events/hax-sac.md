@@ -1,7 +1,7 @@
 ---
-title: "HAX@Sac"
-date: May 4, 2020
-location: Not sure, CA
-cover: "/assets/images/cms_uploads/2.jpg"
+title: "HAX 121"
+planned_date: "Jan-Feb 2020"
+location: Central Valley, CA
+cover: "/assets/images/cms_uploads/hax-121.jpg"
 website_url:
 ---

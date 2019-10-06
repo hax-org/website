@@ -11,28 +11,33 @@ permalink: "/events"
 	<!-- get the event date, in unix format (so we can compare it to today's date) -->
 	{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
 	
-	<!-- there are events in the future -->
-	{% if event_date > today_date %}
-		{% assign upcoming_events_exist = true %}
-	{% endif %}
+	{% if event.date %}
+		<!-- there are events in the future with exact dates-->
+		{% if event_date > today_date %}
+			{% assign upcoming_events_exist = true %}
+		{% endif %}
 
-	<!-- there are events in the past -->
-	{% if event_date < today_date %}
-		{% assign past_events_exist = true %}
+		<!-- there are events in the past -->
+		{% if event_date < today_date %}
+			{% assign past_events_exist = true %}
+		{% endif %}
+	{% else if event.planned_date %}
+		<!-- there are events with planned dates -->
+		{% assign upcoming_events_exist = true %}
 	{% endif %}
 {% endfor %}
 
+
 {% if upcoming_events_exist %}
-	<section class="section-default section-gray-bg">
+	<section class="section-default section-white-bg">
 		<div class="container">
 			<h1 class="title-centered">Upcoming Events</h1>
-			<p class="events-desc">Maybe include a short description of HAX events or something.
-			<div class="row">
+			<div class="row event-row">
 				{% for event in events %}
 					<!-- get the event date, in unix format (so we can compare it to today's date) -->
 					{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
 					<!-- if it's in the future -->
-					{% if event_date > today_date %}
+					{% if event_date > today_date or event.planned_date %}
 						<!-- then include it, passing event to the partial -->
 						{% include events/event.html event=event %}
 					{% endif %}
@@ -46,12 +51,12 @@ permalink: "/events"
 	<section class="section-default {% if upcoming_events_exist %}section-white-bg{% else %}section-gray-bg{% endif %}">
 		<div class="container">
 			<h1 class="page-title title-centered">Past Events</h1>
-			<div class="row">
+			<div class="row event-row">
 				{% for event in events %}
 					<!-- get the event date, in unix format (so we can compare it to today's date) -->
 					{% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
 					<!-- if it's in the future -->
-					{% if event_date < today_date %}
+					{% if event.date and event_date < today_date %}
 						<!-- then include it, passing event to the partial -->
 						{% include events/event.html event=event %}
 					{% endif %}

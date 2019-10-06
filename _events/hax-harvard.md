@@ -1,7 +1,7 @@
 ---
 title: "HAX@Harvard"
-date: July 20, 2019
+planned_date: "Date TBA"
 location: Cambridge, MA
-cover: "/assets/images/cms_uploads/1.jpg"
+cover: "/assets/images/cms_uploads/hax-harvard.jpg"
 website_url:
 ---

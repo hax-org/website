@@ -6,6 +6,7 @@ date:   2019-6-3 00:00:00 -0800
 author: "Olivia Chang"
 cover: "/assets/images/cms_uploads/1.jpg"
 tags: hackathon tech
+hidden: true
 ---
 This page is a demo that shows everything you can do inside blog posts.
 

@@ -5,6 +5,10 @@
 	margin: 0 auto 60px;
 }
 
+.event-row {
+	padding-top: 30px;
+}
+
 .event-container {
 	@include smooth-transition;
 	color: black;
