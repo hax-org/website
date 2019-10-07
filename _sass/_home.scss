@@ -147,11 +147,16 @@
 
   img {
     margin-bottom: 30px;
+    transition: 0.25s all;
     /*margin-left: 25%;*/
     @media (min-width: $md) {
       width: auto;
       margin: 10px 20px 0;
       max-height: 70px;
+    }
+
+    &:hover {
+      opacity: 0.5;
     }
   }
 }

@@ -62,6 +62,7 @@ collections:
     # All fields default to required unless specified
     fields: # The front matter for each post
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false, hint: "Hide the post from the blog page. The URL is still accessible."}
       - {label: "Title", name: "title", widget: "string", hint: "Title of the post."}
       - {label: "Subheading", name: "subheading", widget: "text", hint: "Short description (1-2 sentences) of the post content. Appears underneath the title."}
       - {label: "Tags", name: "tags", widget: "string", hint: "Keywords which are associated with the post. Separate with spaces."}
