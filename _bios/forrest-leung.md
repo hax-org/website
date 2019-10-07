@@ -9,7 +9,7 @@ twitter:
 website: 
 youtube: 
 email: fleung48@gmail.com
-github: 
+github: https://github.com/fleung48
 discord: 
 instagram: http://instagram.com/fleung48
 linkedin: http://linkedin.com/in/fleung48

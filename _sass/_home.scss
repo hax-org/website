@@ -126,62 +126,69 @@
 
 .partners-text {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .partners-container {
   align-items: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: $sm) {
+  @media (min-width: $md) {
     flex-direction: row;
     width: 50%;
     margin: 0 auto;
   }
 
+  a {
+    justify-content: center;
+  }
+
   img {
-    @media (min-width: $sm) {
+    margin-bottom: 30px;
+    /*margin-left: 25%;*/
+    @media (min-width: $md) {
       width: auto;
       margin: 10px 20px 0;
+      max-height: 70px;
     }
   }
 }
 
 .partner-gwc {
-  width: 50%;
-  margin-bottom: 30px;
-  @media (min-width: $sm) {
-    height: 60px;
+  height: 8vw;
+  @media (min-width: $md) {
+    height: 4vw;
   }
 }
 
 .partner-bbg {
-  width: 80%;
-  @media (min-width: $sm) {
-    height: 30px;
+  height: 5vw;
+  @media (min-width: $md) {
+    height: 2vw;
+    max-height: 40px !important;
   }
 }
 
 .partner-slack {
-  width: 80%;
-  @media (min-width: $sm) {
-    height: 100px;
+  height: 7vw;
+  @media (min-width: $md) {
+    height: 3.2vw;
   }
 }
 
 .partner-notion {
-  width: 80%;
-  @media (min-width: $sm) {
-    height: 60px;
+  height: 9vw;
+  @media (min-width: $md) {
+    height: 4vw;
   }
 }
 
 .partner-magic {
-  width: 80%;
-  @media (min-width: $sm) {
-    height: 80px;
+  height: 8vw;
+  @media (min-width: $md) {
+    height: 4vw;
     margin-top: 20px !important;
   }
 }
