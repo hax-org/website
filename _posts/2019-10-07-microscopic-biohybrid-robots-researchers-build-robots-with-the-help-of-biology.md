@@ -18,8 +18,6 @@ guest_author: false
 
 \    Yet, what if scientists and researchers adopted a new approach?  That’s exactly what teams at the University of Illinois at Urbana-Champaign (UIUC) have done.  By using biology, they were able to develop a new type of robot with soft muscle and nerve tissue.  This is far away from any sort of large, metal contraption.  
 
-
-
 ## \    What are These New Robots, and What Do They Do?
 
 \    UIUC’s new robot is known as a microscopic biohybrid robot.  Although that seems like a mouthful, it can be broken down into simpler terms.  Microscopic biohybrid robots are just small robots that combine biological tissue with machinery. 
@@ -34,12 +32,8 @@ guest_author: false
 
 \    The latest microscopic biohybrid robots from UIUC, have a key component their first biobots did not.  In order to help the biobots sense and adapt to their environment, the teams added optogenetic* nerve cells.  These neurons are sensitive to light; when exposed, they are able to activate the cardiac muscle cells. 
 
-
-
 ## \    The Future of Microscopic Biohybrid Robots
 
 \    Although this technology is still developing, one day it could help lead to advancements in material technology and even medicine.  Robots and computer science are paving the way to a technological future.  Projects like the microscopic biohybrid robots from UIUC bring us one step closer to intelligent, living machinery.
-
-
 
 \* Optogenetics is the biological technique that scientists use to control cells through light.
