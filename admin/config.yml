@@ -62,7 +62,6 @@ collections:
     # All fields default to required unless specified
     fields: # The front matter for each post
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false, hint: "Hide the post from the blog page. The URL is still accessible."}
       - {label: "Title", name: "title", widget: "string", hint: "Title of the post."}
       - {label: "Subheading", name: "subheading", widget: "text", hint: "Short description (1-2 sentences) of the post content. Appears underneath the title."}
       - {label: "Tags", name: "tags", widget: "string", hint: "Keywords which are associated with the post. Separate with spaces."}
@@ -73,3 +72,4 @@ collections:
       - {label: "Guest Author Name", name: "guest_author_name", widget: "string", required: false , hint: "Name of the guest author."}
       - {label: "Guest Author Description", name: "guest_author_desc", widget: "string", required: false, hint: "Short description (1-2 sentences) of the guest author." }
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false, hint: "Hide the post from the blog page. The URL is still accessible."}
