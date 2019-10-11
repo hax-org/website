@@ -8,7 +8,7 @@ subheading: >-
   of biology. 
 tags: robots technology biology STEM cs science
 date: 2019-10-08T00:20:38.128Z
-cover: /assets/images/cms_uploads/download.jpg
+cover: /assets/images/cms_uploads/158562.jpg
 author: Jillian Holbrook
 guest_author: false
 ---
