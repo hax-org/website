@@ -8,9 +8,6 @@ items:
     link: /blog/
   - name: Events
     link: /events
-  - name: Our Team
-    link: /our-team
-    hidden_nav: true
   - name: Get Involved
     link: /get-involved
   - name: Contact
