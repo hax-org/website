@@ -11,7 +11,7 @@ youtube:
 email: 
 github: 
 discord: 
-instagram: https://www.instagram.com/creativeusername1234567890/
-linkedin: https://www.linkedin.com/in/peter-cao-11a429105/
-snapchat: 
+instagram: https://www.instagram.com/peter.p.cao/
+linkedin: https://www.linkedin.com/in/peter-cao2020/
+snapchat: https://www.snapchat.com/add/thegreennapalm 
 ---
